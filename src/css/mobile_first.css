@@ -1,0 +1,1041 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+/*  ------------------------>  RESETEO  <------------------------ */
+
+*{
+    margin   : 0;
+    padding  : 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    /* equivale a 10px */
+    background : #F9FAFF;
+
+}
+ul,li{
+    list-style-type:none;
+}
+a {
+    color          : #25282B;
+    display        : flex;
+    outline-style  : none;
+    text-decoration: none;
+    padding        : 0px;
+    border         : 0px;
+    margin         : 0px;
+}
+/*  ------------------------>  REUTILIZABLES  <------------------------ */
+.clipped {
+    /* Para esconder mis h1 lo googlee */
+    clip             : rect(0 0 0 0);
+    border           : 0;
+    -webkit-clip-path: inset(50%);
+    clip-path        : inset(50%);
+    display          : block;
+    margin           : 0 -1px -1px 0;
+    overflow         : hidden;
+    padding          : 0;
+    position         : absolute;
+    z-index          : -1;
+}
+
+.icons-style {
+    /* standar size de iconos*/
+    width : 25px;
+    height: 25px;
+}
+
+.icon-style-big {
+    width : 56px;
+    height: 56px;
+}
+
+.icon-logo{
+    max-height: 70px;
+    max-width     : 70px;
+}
+
+.logo-brands{
+    max-height: 55px;
+    max-width     : 55px;
+}
+
+/* ------------------------> LETRAS USO GENERAL  <------------------------ */
+
+.relaway-espaciado {
+    /* relaway-espaciado */
+    font-family   : 'Raleway';
+    font-style    : normal;
+    font-weight   : 500;
+    font-size     : 1.8rem;
+    line-height   : 28px;
+    letter-spacing: 7.5px;
+    text-transform: uppercase;
+    /*color       : #656D72; Cinder Light  TODO: PENSAR EN DEF EN EL ELEMENTO*/
+}
+
+.font-web-dev {
+    /* WEB DEV FONT*/
+    font-family   : 'Raleway';
+    font-style    : normal;
+    font-weight   : 500;
+    font-size     : 1.8rem;
+    line-height   : 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h1 {
+    /* my-h1 */
+    font-family: 'Plus Jakarta Sans';
+    /* tipo de letra */
+    font-style : normal;
+    /* si es normal o italic */
+    font-weight: 700;
+    /* si es normal o bold */
+    font-size  : 6.4rem;
+    /* el tamano en nro o porcentaje */
+    line-height: 100%;
+    color      : #000000;
+}
+
+h2 {
+    /* my-h2 */
+    font-family: 'Plus Jakarta Sans';
+    font-style : normal;
+    font-weight: 700;
+    font-size  : 3.6rem;
+    line-height: 45px;
+    margin     : 0px;
+}
+
+h3 {
+
+    font-family: 'Plus Jakarta Sans';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 2rem;
+    line-height: 25px;
+}
+
+h4 {
+    /* my-h4 */
+    font-family: 'Plus Jakarta Sans';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 2rem;
+    line-height: 25px;
+    color      : #656D72;
+    /* Cinder Light */
+}
+
+.relaway-body,
+p {
+    font-family: 'Raleway';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 1.8rem;
+    line-height: 28px;
+
+}
+
+.font-inter-normal {
+    /* EX fontInterNormal*/
+    font-family: 'Inter';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 1.2rem;
+    line-height: 15px;
+}
+
+.font-plus-j-light {
+    /* EX plusJlightBody*/
+    font-family: 'Plus Jakarta Sans';
+    font-style : normal;
+    font-weight: 300;
+    font-size  : 1.8rem;
+    line-height: 23px;
+}
+
+.font-copyrights {
+    font-family: 'Inter';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 17px;
+    text-align : center;
+
+}
+
+.font-plus-j-normal {
+    font-family: 'Plus Jakarta Sans';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 2rem;
+    line-height: 25px;
+}
+
+/*  ------------------------>  2 SERVICE  <------------------------ */
+
+
+
+/*  ------------------------>  MENU  <------------------------ */
+
+/* **** MOBILE FIRST **** */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    background   : #F9FAFF;
+    width: 100vw;
+    border-bottom: solid 1px #9A9FA8;
+    transition   : all 0.5s ease;
+    z-index      : 10;
+
+}
+
+.logo-header {
+    display        : flex;
+    justify-content: flex-start;
+    align-items    : center;
+    flex-direction : row;
+    gap            : 10px;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+
+header:hover {
+    box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-options>ul {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    gap            : 10px;
+    flex-wrap: wrap;
+    /* gap te separa los items flex */
+}
+
+.my-name-nav {
+    /* especifico el color al FONT relaway-espaciado */
+    color: #25282B;
+}
+/* **** MOBILE FIRST **** */
+/* **** RESTO DE DISPOSITIVOS **** */
+@media (min-width:768px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 10px;
+    }
+}
+/*  ------------------------>  END MENU  <------------------------ */
+/* **** MOBILE FIRST **** */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    }
+/* **** MOBILE FIRST **** */
+
+@media (min-width:768px){ /*REVISAR*/
+
+}
+
+/*  ------------------------>  SECTION 1 HEADER MAIN  <------------------------ */
+/* **** MOBILE FIRST **** */
+#my-header {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    align-items    : center;
+    width          : 100%;
+    padding: 15px;
+    margin-bottom  : 10px;
+}
+
+
+.content-btns { /*acomodo boton*/
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    justify-content: flex-start;
+    padding        : 15px 0px;
+    gap            : 12px;
+    width          : 100%;
+}
+
+.btn-porfolio {
+    /* solo corlor y border especificos */
+    background: #FF9494;
+    color     : #25282B;
+    border    : 2px solid #FF9494;
+}
+
+.btn-linked {
+    /* solo corlor y border especificos */
+    border: 2px solid #25282B;
+    color : #25282B;
+}
+
+#button {
+    display        : flex;
+    align-items    : flex-start;
+    justify-content: center;
+    padding        : 8px 24px;
+    width          : 120px;
+    height         : 45px;
+    border-radius  : 8px;
+}
+
+.content-header p {
+    /* Auto layout */
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
+    padding       : 5px;
+    /*deff color font */
+    color: #828282;
+}
+
+#wd-text { /* Luego se le aplicara animacion */
+    /* WEB DEV FONT DEFF COLOR*/
+    color     : #FF9494;
+    /* Inside auto layout */
+    order     : 0;
+    align-self: stretch;
+    flex-grow : 0;
+    display        : flex;
+    justify-content: flex-start;
+    margin-top     : 15px;
+    margin-bottom  : 15px;
+}
+/* **** MOBILE FIRST **** */
+@media (min-width:768px) {
+    #my-header{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: "jobs img" "title img" "texto img" "btn img";
+        grid-gap: 10px;
+    }
+    #wd-text{
+        grid-area: jobs;
+    }
+    #my-header h1{
+        grid-area: title;
+    }
+    #my-header p{
+        grid-area: texto; 
+    }
+    .img-profile-header{
+        display: grid;
+        grid-area: img;
+        justify-content: center;
+    }
+    #button{
+        grid-area: btn;
+    }
+}
+/*  ------------------------>  1 SECTION SERVICE  <------------------------ */
+/* **** MOBILE FIRST **** */
+#my-services {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-around;
+    align-items     : flex-start;
+    width           : 100%;
+    background-color: #FBFBFB;
+    color           : #656D72;
+    /* color font para relaway-espaciado*/
+    padding: 15px;
+    gap: 15px;
+}
+
+#my-services article {
+    /* TODO CARD minim size responsive - mediaQuery?*/
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+    align-items    : center;
+    /* White */
+    background     : #FFFFFF;
+    border-radius  : 8px;
+    flex-basis     : 350px;
+    height         : 310px;
+    padding        : 20px;
+    gap: 10px;
+    overflow       : auto;
+}
+
+.icon-services {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    padding        : 16px;
+    /* light pink */
+    background     : rgba(255, 148, 148, 0.2);
+    border-radius  : 16px;
+    margin-top     : 10px;
+    margin-bottom  : 10px;
+}
+
+#my-services article p {
+    display        : flex;
+    justify-content: center;
+    margin         : 0px auto auto auto;
+    /* Piso algunas atributos de font p particulares de cada card */
+    font-size      : 1.6rem;
+    line-height    : 24px;
+    text-align     : center;
+    color          : #232E35;
+}
+
+#my-services article h3 {
+    color: #232E35;
+}
+/* **** MOBILE FIRST **** */
+@media (min-width: 768px){
+    #my-services{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+        "titulo-section titulo-section titulo-section"
+        "titulo titulo titulo";
+        grid-gap: 20px;
+        height: 500px;
+    }
+    #my-services label{
+        grid-area: titulo-section;
+        display: grid;
+        justify-content: start;
+    }
+    #my-services h2{
+        grid-area: titulo;
+        display: grid;
+        justify-content: start;
+    }
+
+    #my-services article{
+        width: 85%;
+        margin: 25px;
+    }
+}
+
+/*  ------------------------>  3 SECTION TECH  <------------------------ */
+/* **** MOBILE FIRST **** */
+#my-tech {
+    /* pink */
+    background     : #FF9494;
+    opacity        : 0.2;
+    display        : flex;
+    flex-flow: row wrap;
+    align-items    : center;
+    justify-content: space-around;
+    width          : 100%;
+    margin: 0px;
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+/* **** MOBILE FIRST **** */
+@media (min-width: 768px){
+    #my-tech .logo-brands{
+        max-height: 100px;
+        max-width     : 100px;
+    }
+
+    #my-tech{
+        height: 200px;
+    }
+}
+
+/*  ------------------------>  SECTION COMPNIES LOGOS  <------------------------ */
+/* **** MOBILE FIRST **** */
+#my-companies {
+    /* pink */
+    background     : #FF9494;
+    opacity        : 0.2;
+    display        : flex;
+    flex-flow: row wrap;
+    align-items    : center;
+    justify-content: space-around;
+    width          : 100%;
+    margin: 0px;
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+
+}
+/* **** MOBILE FIRST **** */
+@media (min-width: 768px){
+    #my-companies .logo-brands{
+        max-height: 100px;
+        max-width     : 100px;
+    }
+
+    #my-companies{
+        height: 200px;
+    }
+}
+
+/*  ------------------------>  4 SECTION TESTIMONIALS  <------------------------ */
+/* **** MOBILE FIRST **** */
+#my-clients {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : flex-start;
+    width          : 100%;
+    color          : #656D72;
+    /* color font para relaway-espaciado*/
+
+}
+
+#my-clients>* {
+    padding: 20px;
+}
+
+#my-clients h2{
+    margin-bottom: 20px;
+}
+
+.testimonials-cards {
+    /*contenedor de todas las cards */
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    align-items    : center;
+    width          : 100%;
+    flex-wrap      : wrap;
+    gap            : 60px;
+
+}
+
+.article-testimonials {
+    position       : relative;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    /* Service item */
+    height         : 300px;
+    /* White */
+    background     : #FFFFFF;
+    border-radius  : 8px;
+    padding        : 50px 25px 15px 25px;
+}
+
+.article-testimonials>span {
+    display        : flex;
+    justify-content: center;
+    position       : absolute;
+    top            : -48px;
+    left           : calc(50% - 48px);
+    /* el 50% va a ser del eje x [left] calculo el medio y -48 es la mitad de la foto */
+}
+
+.article-testimonials>p {
+    display        : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+    align-items    : flex-start;
+    /* FONT        : Agrego atributos al p para darle estilo */
+    line-height    : 24px;
+    color          : #232E35;
+    /* Cinder 232E35 */
+    overflow       : auto;
+}
+
+.article-testimonials>div {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : flex-start;
+    flex-direction : column;
+    padding-top: 10px;
+}
+
+.job-title {
+    display        : flex;
+    justify-content: center;
+    flex-direction : row;
+    margin-top     : 5px;
+    padding        : 4px 8px;
+    background     : #FBFBFB;
+    /* Light 1 */
+    border-radius  : 4px;
+    color: #656D72;
+    /* FONT Cinder Light */
+}
+
+.testimonials-name {
+    color: #232E35;
+    /* Cinder */
+}
+/* **** MOBILE FIRST **** */
+@media(min-width:768px){
+    .testimonials-cards {
+        flex-direction : row;
+        justify-content: space-around;
+        align-items    : center;
+        width          : 100%;
+        flex-wrap      : wrap;
+        gap            : 15px;
+    }  
+    .article-testimonials{
+        position       : relative;
+        display        : flex;
+        flex-direction : column;
+        justify-content: space-between;
+        /* Service item */
+        width          : 350px;
+        height         : 300px;
+        /* White */
+        background     : #FFFFFF;
+        border-radius  : 8px;
+        padding        : 50px 25px 15px 25px;
+    }
+}
+/*  ------------------------>  5 SECTION SKILLS  <------------------------ */
+/* **** MOBILE FIRST **** */
+#my-skills {
+    background-color: #FBFBFB;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : flex-start;
+    width          : 100%;
+}
+
+#my-skills>* {
+ padding: 20px;
+}
+
+.skills-title {
+    display       : flex;
+    flex-direction: column;
+    color         : #656D72;
+    /* color font para relaway-espaciado*/
+
+}
+
+.skills-title label {
+    margin-bottom: 40px;
+
+}
+
+.container-skills {
+    display       : flex;
+    flex-direction: column;
+
+}
+
+.container-skills article {
+    width          : 100%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    align-content  : flex-start;
+
+}
+
+.container-skills article p {
+    padding-bottom: 10px;
+}
+
+.education label {
+    display: inline-block;
+    margin : 10px 2px 30px 2px;
+}
+
+.education div>* {
+    margin: 2px;
+}
+
+/* TODO: add linea vertical con dots en education 
+.vl{ -> va en el article?
+    border-left: 10px solid #F1F1F1;
+    height: 500px;
+}*/
+
+/* Formar barra de progreso reutilizable*/
+
+.bar-container {
+    /* color */
+    background-color: rgba(255, 148, 148, 0.2);
+    /* radius */
+    border-radius   : 2px 0px 0px 2px;
+    margin: 10px 0px;
+}
+
+.progress-container {
+    padding         : 0.01em 16px;
+    height          : 10px;
+    background-color: #3A7091;
+}
+
+/* Formar barra de progreso */
+/* **** MOBILE FIRST **** */
+/*  ------------------------>  SECTION SKILLS  <------------------------ */
+
+/*  ------------------------>  FOOTER  <------------------------ */
+/* **** MOBILE FIRST **** */
+.my-footer {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    width          : 100%;
+    height: 200px;
+}
+
+.my-footer div {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+}
+
+.footer-icons {
+    /* margin: 50px 30px 0px 30px; */
+    padding: 50px 30px 0px 30px; 
+    
+}
+
+.footer-copy {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    margin-bottom  : 50px;
+    color          : #656D72;
+    /* FONT Cinder Light */
+}
+/* **** MOBILE FIRST **** */
+/*  ------------------------>  FOOTER  <------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ------------------------>  TODO  <------------------------ */
+/*  ------------------------>  carrera.html  <------------------------ */
+/* **** MOBILE FIRST **** */
+
+.career-img {
+    display        : flex;
+    justify-content: center;
+    margin         : 50px 0px 50px 0px;
+}
+
+.my-work {
+    /* es la seccion completa de mis trabajos */
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : flex-start;
+    width          : 100%;
+}
+
+.my-work>* {
+    margin-left  : 100px;
+    margin-top   : 20px;
+    margin-bottom: 40px;
+}
+
+.container-work article {
+    display       : flex;
+    flex-direction: row;
+    padding       : 10px;
+    color         : #232E35;
+}
+
+.container-work article div {
+    display        : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+    padding-right  : 140px;
+}
+
+.container-work article div p {
+    color: #656D72;
+    /* Cinder Light */
+}
+/* **** MOBILE FIRST **** */
+
+/*  ------------------------>  porfolio.html  <------------------------ */
+
+.my-porfolio {
+    /* es la seccion completa de mis trabajos */
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : flex-start;
+    width          : 100%;
+    color          : #656D72;
+    /* color font para relaway-espaciado*/
+    margin-top     : 30px;
+    margin-bottom  : 60px;
+}
+
+.my-porfolio>* {
+    margin-left  : 100px;
+    margin-top   : 20px;
+    margin-bottom: 40px;
+}
+
+.container-porfolio {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-around;
+    align-items    : center;
+    width          : 90%;
+    gap            : 50px;
+    flex-wrap      : wrap;
+}
+
+.container-porfolio article {
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+    align-items    : flex-start;
+    /* Tamano de la card */
+    width          : 360px;
+    height         : 400px;
+    /* Forma de la card */
+    background     : #FFFFFF;
+    border-radius  : 8px;
+    overflow       : hidden;
+    border         : solid #4e709184;
+}
+
+.content-techno-img {
+    width          : 100%;
+    height         : 300px;
+    background-size: cover;
+}
+
+.container-porfolio article h3 {
+    color       : #232E35;
+    padding-left: 24px;
+    padding-top : 24px;
+    margin      : 0px;
+}
+
+.content-technos {
+    display       : flex;
+    flex-direction: row;
+    align-items   : flex-start;
+    padding       : 20px;
+}
+
+.technology {
+    padding      : 4px 8px;
+    gap          : 10px;
+    border       : 1px solid #F1F1F1;
+    border-radius: 4px;
+    margin-right : 20px;
+}
+
+/*  ------------------------>  about-me.html  <------------------------ */
+.about-me {
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+    align-items    : flex-start;
+    width          : 100%;
+}
+
+.about-me>* {
+    margin-left  : 100px;
+    margin-top   : 20px;
+    margin-bottom: 40px;
+    margin-right : 100px;
+}
+
+.about-me p,
+.about-me h2 {
+    /* Cinder */
+    color: #232E35;
+}
+
+.art-img {
+    display       : flex;
+    flex-direction: row;
+}
+
+.art-img div {
+    width: 50%;
+}
+
+.about-me-text {
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+    align-items    : flex-start;
+}
+
+.about-me-img {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.art-video {
+    display       : flex;
+    flex-direction: row;
+}
+
+.art-video div {
+    padding: 0px 40px 0px 0px;
+}
+
+/*  ------------------------>  contact.html  <------------------------ */
+.grid-contact{
+    width: 100vw;
+height: 100vh;
+    display: grid;
+    grid-template: 1fr 2fr 1fr / 1fr;
+    /* grid-template-rows: 15% 60% 25%;
+    grid-template-columns: 1fr; */
+    border: 3px solid black;
+    grid-template-areas: 
+    "navbar"
+    "contact"
+    "footer";
+}
+
+.header-contact{
+    grid-area: navbar;
+}
+.main-contact{
+    grid-area: contact;
+}
+.footer-contact{
+    background-color: red;
+}
+
+
+.my-contact {
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+    align-items    : flex-start;
+    width          : 100%;
+}
+
+.my-contact>* {
+    margin-left  : 100px;
+    margin-top   : 20px;
+    margin-bottom: 10px;
+    margin-right : 100px;
+}
+
+.content-contact {
+    display        : flex;
+    flex-direction : row;
+    width          : 90%;
+    justify-content: space-between;
+}
+
+.div-form,
+.datos-contact {
+    width  : 50%;
+    padding: 10px;
+}
+
+.formulario div {
+    display       : flex;
+    flex-direction: column;
+}
+
+.formulario div>* {
+    margin: 8px;
+}
+
+.formulario div label {
+    color: #232E35;
+}
+
+.input-form {
+    height       : 48px;
+    background   : #FFFFFF;
+    border-radius: 8px;
+    border       : none;
+    padding      : 10px;
+}
+
+.contact-options {
+    height       : 48px;
+    background   : #FFFFFF;
+    border-radius: 8px;
+    border       : none;
+    color        : #232E35;
+}
+
+.text-area {
+    background   : #FFFFFF;
+    border-radius: 8px;
+    border       : none;
+    padding      : 10px;
+}
+
+.formulario-btn {
+    height       : 49px;
+    background   : #FF9494;
+    border       : 1px solid #EAE6FE;
+    border-radius: 8px;
+}
+
+.datos-contact {
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+    margin-left    : 100px;
+    margin-top     : 8px;
+}
+
+.div-card-info {
+    margin-bottom : 50px;
+    display       : flex;
+    flex-direction: row;
+}
+
+.div-contact-info {
+    display       : flex;
+    flex-direction: column;
+    margin-left   : 25px;
+}
+
+.datos-contact div label {
+    /* Cinder */
+    color: #232E35;
+}
+
+.datos-contact div span {
+    color: #656D72;
+}

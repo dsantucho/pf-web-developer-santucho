@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <title>Daniela Santucho - Contacto</title>
+</head>
+
+<body>
+    <div class="grid-contact"> <!--contenedor general-->
+        <header>
+            <nav class="header-nav">
+                <!-- un menu superior-->
+                <div class="logo-header">
+                    <img src="../src/image/logo-ds.png" alt="Daniela Logo">
+                    <div class="my-name-nav relaway-espaciado ">Daniela Santucho</div>
+                </div>
+                <div class="menu-options relaway-body">
+                    <ul>
+                        <!--menu-->
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./career.html">Carrera</a></li>
+                        <li><a href="./porfolio.html">Porfolio</a></li>
+                        <li><a href="./about-me.html">Sobre-mi</a></li>
+                        <li><a href="./contact.html">Contacto</a></li>
+                        <!-- TODO quiero un menu desplegable lenguaje-->
+                        <li><img class="icons-style" src="../src/image/language.png" alt="languageIcon"></li>
+                        <li><a href="https://github.com/dsantucho" target="_blank">
+                                <img class="icons-style" src="../src/image/github.png" alt="githubIcon">
+                            </a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/dsantucho/" target="_blank">
+                                <img class="icons-style" src="../src/image/linkedin.png" alt="linkedinIcon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="clipped">Daniela Santucho Contact</h1>
+            <section class="my-contact">
+
+                <!-- Contact whit me FORM -->
+                <h2>Contact me</h2>
+
+                <div class="content-contact">
+                    <div class="div-form">
+                        <form class="formulario font-inter-normal" name="contact-me" method="post"
+                            action="mailto:soledadsantucho@hotmail.com">
+                            <div>
+                                <label class="relaway-body" for="nombre-form">Nombre y Apellido</label>
+                                <input class="input-form" type="text" name="Name" id="nombre-form" value=""
+                                    placeholder="Juan Lopez" required />
+                            </div>
+                            <div>
+                                <label class="relaway-body" for="email-form">Email:</label>
+                                <input class="input-form" type="text" name="email" id="email-form" value=""
+                                    placeholder="example@example.com" required />
+                            </div>
+                            <div>
+                                <label class="relaway-body" for="contact-form">Me contacto desde: </label>
+                                <select class="contact-options" name="contacto" id="contact-form">
+                                    <option value="recruter">Recruter</option>
+                                    <option value="personal">Unipersonal</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="relaway-body" for="message-form">Message</label>
+                                <textarea class="text-area" name="mensaje" id="message-form" cols="30"
+                                    rows="10"></textarea>
+                            </div>
+                            <div>
+                                <input class="formulario-btn font-inter-normal" type="submit" value="Send Message" />
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="datos-contact">
+
+                        <div class="div-card-info">
+
+                            <img class="icon-style-big" src="../src/image/contact/contact-address-icon.png"
+                                alt="icon-address">
+                            <div class="div-contact-info">
+                                <label class="font-plus-j-normal">Address</label>
+                                <span class="relaway-body">Montevideo - Uruguay</span>
+                            </div>
+
+                        </div>
+                        <div class="div-card-info">
+                            <img class="icon-style-big" src="../src/image/contact/contact-phone-icon.png"
+                                alt="icon-phone">
+                            <div class="div-contact-info">
+                                <label class="font-plus-j-normal">Phone</label>
+                                <span class="relaway-body">(+549) 123456789</span>
+                            </div>
+
+                        </div>
+                        <div class="div-card-info">
+                            <img class="icon-style-big" src="../src/image/contact/contact-mail-icon.png"
+                                alt="icon-mail">
+                            <div class="div-contact-info">
+                                <label class="font-plus-j-normal">E-mail</label>
+                                <span class="relaway-body">anonimo@hotmail.com</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="my-footer">
+            <div>
+                <span>
+                    <a href="./contact.html">
+                        <img src="../src/image/footerIcon/mail.svg" alt="contact me">
+                    </a>
+                </span>
+                <span>
+                    <a href="https://github.com/dsantucho" target="_blank">
+                        <img src="../src/image/footerIcon/Github.png" alt="github">
+                    </a>
+                </span>
+                <span>
+                    <a href="https://www.linkedin.com/in/dsantucho/" target="_blank">
+                        <img src="../src/image/footerIcon/Linkedin.png" alt="linkedin">
+                    </a>
+                </span>
+            </div>
+            <span class="font-copyrights"> © 2022 - Copyrights Daniela Santucho</span>
+        </footer>
+    </div>
+</body>
+
+</html>
