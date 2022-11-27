@@ -2,226 +2,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+
 /*  ------------------------>  RESETEO  <------------------------ */
-html,
-body {
+
+*{
     margin   : 0;
     padding  : 0;
-    font-size: 62.5%;
-    /* equivale a 10px */
-}
-
-* {
     box-sizing: border-box;
 }
-
-body {
+html{
+    font-size: 62.5%;
+}
+body{
+    /* equivale a 10px */
     background : #F9FAFF;
-    /* padding-top: 80px; */
-    /* lugar para el menu*/
+
+}
+ul,li{
+    list-style-type:none;
 }
 
-/*  ------------------------>  MENU  <------------------------ */
-/* nav {
-    display        : flex;
-    flex-direction : row;
-    justify-content: space-around;
-    align-items    : center;
-} */
-
-nav>div {
-    width: 50%;
+/*  ------------------------>  REUTILIZABLES  <------------------------ */
+.clipped {
+    /* Para esconder mis h1 lo googlee */
+    clip             : rect(0 0 0 0);
+    border           : 0;
+    -webkit-clip-path: inset(50%);
+    clip-path        : inset(50%);
+    display          : block;
+    margin           : 0 -1px -1px 0;
+    overflow         : hidden;
+    padding          : 0;
+    position         : absolute;
+    z-index          : -1;
 }
 
-.logo-header {
-    display        : flex;
-    justify-content: flex-start;
-    align-items    : center;
-    flex-direction : row;
-    gap            : 10px;
+.icons-style {
+    font-size: 2rem;
 }
 
-.logo-header>img {
-    /* size de mi logo*/
+.icon-style-big {
+    width : 56px;
+    height: 56px;
+}
 
+.icon-logo{
     max-height: 70px;
-    width     : auto;
+    max-width     : 70px;
 }
 
-.header-nav {
-    /* le doy estilo, color, etc no displey*/
-    /* position     : fixed;
-    height       : 76px;
-    left         : 0px;
-    right        : 0px;
-    top          : 0px; */
-    display: flex;
-    border-bottom: solid 1px #9A9FA8;
-    transition   : all 0.5s ease;
-    z-index      : 10;
-    background   : #F9FAFF;
-}
-
-.header-nav:hover {
-    box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.1);
-}
-
-.menu-options {
-    display        : flex;
-    justify-content: flex-end;
-    align-items    : center;
-    flex-direction : row;
-    padding-right  : 15px;
-
-}
-
-.menu-options>ul {
-    width          : 100%;
-    display        : flex;
-    list-style     : none;
-    flex-direction : row;
-    justify-content: flex-end;
-    align-items    : center;
-    gap            : 20px;
-    /* gap te separa los items flex */
-}
-
-.menu-options>ul>li {
-    /* lo agrego por que tengo el icono del mundo [luego cambiar de idioma] que sino no se alinea bien */
-    display: flex;
-}
-
-a {
-    color          : #25282B;
-    display        : flex;
-    outline-style  : none;
-    text-decoration: none;
-    padding        : 0px;
-    border         : 0px;
-    margin         : 0px;
-}
-
-/* TODO esto para despues
-a:link {
-
-}
-
-a:visited {
-
-}
-
-a:focus {
-
-}
-
-a:hover {
-}
-
-a:active {
-
-}*/
-
-.my-name-nav {
-    /* especifico el color al FONT relaway-espaciado */
-    color: #25282B;
-}
-
-
-
-/*  ------------------------>  END MENU  <------------------------ */
-
-/*  ------------------------>  SECTION 1 HEADER MAIN  <------------------------ */
-#my-header {
-    display        : flex;
-    flex-direction : row;
-    justify-content: space-around;
-    align-items    : center;
-    width          : 100%;
-    margin-bottom  : 80px;
-}
-
-#my-header>div {
-    width: 50%;
-}
-
-.img-profile-header {
-    display        : flex;
-    justify-content: center;
-}
-
-.content-header {
-    display        : flex;
-    flex-direction : column;
-    justify-content: center;
-    margin-left    : 100px;
-}
-
-.content-header div {
-    display        : flex;
-    flex-direction : row;
-    align-items    : center;
-    justify-content: flex-start;
-    padding        : 0px;
-    gap            : 12px;
-    width          : 242px;
-    height         : 43px;
-}
-
-.btn-porfolio {
-    /* solo corlor y border especificos */
-    background: #FF9494;
-    color     : #25282B;
-    border    : 2px solid #FF9494;
-}
-
-.btn-linked {
-    /* solo corlor y border especificos */
-    border: 2px solid #25282B;
-    color : #25282B;
-}
-
-#button {
-    display        : flex;
-    align-items    : flex-start;
-    justify-content: center;
-    padding        : 8px 24px;
-    width          : 120px;
-    height         : 45px;
-    border-radius  : 8px;
-}
-
-
-.content-header p {
-    /* Auto layout */
-    display       : flex;
-    flex-direction: column;
-    align-items   : flex-start;
-    padding       : 0px;
-    gap           : 12px;
-
-    /*deff color font */
-    color: #828282;
-}
-
-#wd-text {
-    /* Web Developer */
-    width     : 486px;
-    height    : 27px;
-    /* WEB DEV FONT DEFF COLOR*/
-    color     : #FF9494;
-    /* Inside auto layout */
-    flex      : none;
-    order     : 0;
-    align-self: stretch;
-    flex-grow : 0;
-
-    display        : flex;
-    justify-content: flex-start;
-    margin-top     : 15px;
-    margin-bottom  : 15px;
+.logo-brands{
+    max-height: 55px;
+    max-width     : 55px;
 }
 
 /* ------------------------> LETRAS USO GENERAL  <------------------------ */
+
 .relaway-espaciado {
     /* relaway-espaciado */
     font-family   : 'Raleway';
@@ -336,36 +172,157 @@ p {
 }
 
 /*  ------------------------>  2 SERVICE  <------------------------ */
+
+
+
+/*  ------------------------>  HEADER NAV  <------------------------ */
+
+header{
+    background   : #F9FAFF;
+    border-bottom: solid 1px #9A9FA8;
+    transition   : all 0.5s ease;
+    z-index      : 10;
+    color: #25282B;
+
+}
+
+.header-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0;
+    gap            : 10px;
+}
+
+header:hover {
+    box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/*  ------------------------>    <------------------------ */
+/* **** MOBILE FIRST **** */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    }
+/* **** MOBILE FIRST **** */
+
+@media (min-width:768px){ /*REVISAR*/
+
+}
+
+/*  ------------------------>  SECTION 1 HEADER MAIN  <------------------------ */
+/* **** MOBILE FIRST **** */
+#my-header {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    align-items    : center;
+    width          : 100%;
+    padding: 15px;
+    margin-bottom  : 10px;
+    gap: 5px;
+}
+
+
+.content-btns { /*acomodo boton*/
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    justify-content: flex-start;
+    padding        : 15px 0px;
+    gap            : 12px;
+    width          : 100%;
+}
+
+.btn-porfolio {
+    /* solo corlor y border especificos */
+    background: #FF9494;
+    color     : #25282B;
+    border    : 2px solid #FF9494;
+}
+
+.btn-linked {
+    /* solo corlor y border especificos */
+    border: 2px solid #25282B;
+    color : #25282B;
+}
+
+#button {
+    display        : flex;
+    align-items    : flex-start;
+    justify-content: center;
+    padding        : 8px 24px;
+    width          : 120px;
+    height         : 45px;
+    border-radius  : 8px;
+}
+
+.content-header p {
+    /* Auto layout */
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
+    padding       : 5px;
+    /*deff color font */
+    color: #828282;
+}
+
+#wd-text { /* Luego se le aplicara animacion */
+    /* WEB DEV FONT DEFF COLOR*/
+    color     : #FF9494;
+    /* Inside auto layout */
+    order     : 0;
+    align-self: stretch;
+    flex-grow : 0;
+    display        : flex;
+    justify-content: flex-start;
+    margin-top     : 15px;
+    margin-bottom  : 15px;
+}
+/* **** MOBILE FIRST **** */
+@media (min-width:768px) {
+    #my-header{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: "jobs img" "title img" "texto img" "btn img";
+        grid-gap: 10px;
+    }
+    #wd-text{
+        grid-area: jobs;
+    }
+    #my-header h1{
+        grid-area: title;
+    }
+    #my-header p{
+        grid-area: texto; 
+    }
+    .img-profile-header{
+        display: grid;
+        grid-area: img;
+        justify-content: center;
+    }
+    #button{
+        grid-area: btn;
+    }
+}
+/*  ------------------------>  1 SECTION SERVICE  <------------------------ */
+/* **** MOBILE FIRST **** */
 #my-services {
     display         : flex;
     flex-direction  : column;
-    justify-content : center;
+    justify-content : space-around;
     align-items     : flex-start;
     width           : 100%;
     background-color: #FBFBFB;
     color           : #656D72;
     /* color font para relaway-espaciado*/
+    padding: 15px;
+    gap: 15px;
 }
 
-#my-services>* {
-    margin-left  : 100px;
-    margin-top   : 20px;
-    margin-bottom: 40px;
-}
-
-
-.container-cards {
-    display        : flex;
-    flex-flow      : row wrap;
-    /* WRAP ajusto la pantala se acomoden - tengo f-direction + f-wrap*/
-    justify-content: space-between;
-    align-items    : flex-start;
-    width          : 90%;
-    /*bajo el eje horizontal se colocan las cards una abajo de la otra con un GAP entre ellas de 15px asi no quedan pegadas las cards una debajo de la otra */
-    gap            : 15px;
-}
-
-.container-cards article {
+#my-services article {
     /* TODO CARD minim size responsive - mediaQuery?*/
     display        : flex;
     flex-direction : column;
@@ -376,12 +333,13 @@ p {
     border-radius  : 8px;
     flex-basis     : 350px;
     height         : 310px;
-    padding        : 10px;
+    padding        : 20px;
+    gap: 10px;
+    overflow       : auto;
 }
 
 .icon-services {
     display        : flex;
-    flex-direction : row;
     justify-content: center;
     align-items    : center;
     padding        : 16px;
@@ -391,8 +349,14 @@ p {
     margin-top     : 10px;
     margin-bottom  : 10px;
 }
+.icon-services i{
+        /* standar size de iconos*/
+        font-size: 2.5rem;
+        color: #FF9494;
+        padding: 0px;
+}
 
-.container-cards article p {
+#my-services article p {
     display        : flex;
     justify-content: center;
     margin         : 0px auto auto auto;
@@ -403,53 +367,97 @@ p {
     color          : #232E35;
 }
 
-.container-cards article h3 {
+#my-services article h3 {
     color: #232E35;
+}
+/* **** MOBILE FIRST **** */
+@media (min-width: 768px){
+    #my-services{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+        "titulo-section titulo-section titulo-section"
+        "titulo titulo titulo";
+        grid-gap: 20px;
+        height: 500px;
+    }
+    #my-services label{
+        grid-area: titulo-section;
+        display: grid;
+        justify-content: start;
+    }
+    #my-services h2{
+        grid-area: titulo;
+        display: grid;
+        justify-content: start;
+    }
+
+    #my-services article{
+        width: 85%;
+        margin: 25px;
+    }
 }
 
 /*  ------------------------>  3 SECTION TECH  <------------------------ */
+/* **** MOBILE FIRST **** */
 #my-tech {
     /* pink */
     background     : #FF9494;
     opacity        : 0.2;
     display        : flex;
+    flex-flow: row wrap;
     align-items    : center;
     justify-content: space-around;
     width          : 100%;
-    height         : 200px;
-
+    margin: 0px;
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
 }
+/* **** MOBILE FIRST **** */
+@media (min-width: 768px){
+    #my-tech .logo-brands{
+        max-height: 100px;
+        max-width     : 100px;
+    }
 
-#my-tech>div {
-    display        : flex;
-    flex-direction : row;
-    align-items    : center;
-    justify-content: space-between;
-
+    #my-tech{
+        height: 200px;
+    }
 }
 
 /*  ------------------------>  SECTION COMPNIES LOGOS  <------------------------ */
+/* **** MOBILE FIRST **** */
 #my-companies {
     /* pink */
     background     : #FF9494;
     opacity        : 0.2;
     display        : flex;
+    flex-flow: row wrap;
     align-items    : center;
     justify-content: space-around;
     width          : 100%;
-    height         : 200px;
+    margin: 0px;
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
 
 }
+/* **** MOBILE FIRST **** */
+@media (min-width: 768px){
+    #my-companies .logo-brands{
+        max-height: 100px;
+        max-width     : 100px;
+    }
 
-#my-companies>div {
-    display        : flex;
-    flex-direction : row;
-    align-items    : center;
-    justify-content: space-between;
-
+    #my-companies{
+        height: 200px;
+    }
 }
 
 /*  ------------------------>  4 SECTION TESTIMONIALS  <------------------------ */
+/* **** MOBILE FIRST **** */
 #my-clients {
     display        : flex;
     flex-direction : column;
@@ -462,20 +470,22 @@ p {
 }
 
 #my-clients>* {
-    margin-left  : 100px;
-    margin-top   : 20px;
-    margin-bottom: 40px;
+    padding: 20px;
+}
+
+#my-clients h2{
+    margin-bottom: 20px;
 }
 
 .testimonials-cards {
     /*contenedor de todas las cards */
     display        : flex;
-    flex-direction : row;
-    justify-content: space-between;
+    flex-direction : column;
+    justify-content: space-around;
     align-items    : center;
-    width          : 90%;
+    width          : 100%;
     flex-wrap      : wrap;
-    gap            : 15px;
+    gap            : 60px;
 
 }
 
@@ -485,12 +495,10 @@ p {
     flex-direction : column;
     justify-content: space-between;
     /* Service item */
-    width          : 350px;
     height         : 300px;
     /* White */
     background     : #FFFFFF;
     border-radius  : 8px;
-    margin         : auto;
     padding        : 50px 25px 15px 25px;
 }
 
@@ -520,6 +528,7 @@ p {
     justify-content: space-between;
     align-items    : flex-start;
     flex-direction : column;
+    padding-top: 10px;
 }
 
 .job-title {
@@ -531,7 +540,6 @@ p {
     background     : #FBFBFB;
     /* Light 1 */
     border-radius  : 4px;
-
     color: #656D72;
     /* FONT Cinder Light */
 }
@@ -540,58 +548,84 @@ p {
     color: #232E35;
     /* Cinder */
 }
-
+/* **** MOBILE FIRST **** */
+@media(min-width:768px){
+    .testimonials-cards {
+        flex-direction : row;
+        justify-content: space-around;
+        align-items    : center;
+        width          : 100%;
+        flex-wrap      : wrap;
+        gap            : 15px;
+    }  
+    .article-testimonials{
+        position       : relative;
+        display        : flex;
+        flex-direction : column;
+        justify-content: space-between;
+        /* Service item */
+        width          : 350px;
+        height         : 300px;
+        /* White */
+        background     : #FFFFFF;
+        border-radius  : 8px;
+        padding        : 50px 25px 15px 25px;
+    }
+}
 /*  ------------------------>  5 SECTION SKILLS  <------------------------ */
+/* **** MOBILE FIRST **** */
 #my-skills {
-    width           : 100%;
-    margin-top      : 20px;
     background-color: #FBFBFB;
-    padding-top     : 10px;
-    padding-bottom  : 10px;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : flex-start;
+    width          : 100%;
+    color         : #656D72;
+    /* color font para relaway-espaciado*/
 }
 
 #my-skills>* {
-    margin-left  : 100px;
-    margin-top   : 20px;
-    margin-bottom: 40px;
-    margin-right : 90px;
+    padding: 20px;
 }
 
-.skills-title {
+/* #my-skills label, h2 {
+    margin-bottom: 40px;
+} */
+
+/* .skills-title {
     display       : flex;
     flex-direction: column;
     color         : #656D72;
-    /* color font para relaway-espaciado*/
-
 }
 
 .skills-title label {
     margin-bottom: 40px;
 
-}
+} */
 
 .container-skills {
     display       : flex;
-    flex-direction: row;
+    flex-direction: column;
 
 }
 
 .container-skills article {
-    width          : 50%;
+    width          : 100%;
     display        : flex;
-    justify-content: flex-start;
     flex-direction : column;
-    align-content  : center;
+    justify-content: space-between;
+    align-content  : flex-start;
 
 }
 
 .container-skills article p {
-    margin: 0px;
+    padding-bottom: 10px;
 }
 
 .education label {
     display: inline-block;
-    margin : 10px 2px 64px 2px;
+    margin : 10px 2px 30px 2px;
 }
 
 .education div>* {
@@ -611,6 +645,7 @@ p {
     background-color: rgba(255, 148, 148, 0.2);
     /* radius */
     border-radius   : 2px 0px 0px 2px;
+    margin: 10px 0px;
 }
 
 .progress-container {
@@ -618,20 +653,22 @@ p {
     height          : 10px;
     background-color: #3A7091;
 }
-
 /* Formar barra de progreso */
+/* **** MOBILE FIRST **** */
+@media(min-width:768px){
+
+}
 
 /*  ------------------------>  SECTION SKILLS  <------------------------ */
 
 /*  ------------------------>  FOOTER  <------------------------ */
+/* **** MOBILE FIRST **** */
 .my-footer {
-    display        : grid;
-    /* flex-direction : column;
-    align-items    : center;
-    justify-content: space-around; */
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
     width          : 100%;
-    height         : 200px;
-    grid-area: footer;
+    height: 200px;
 }
 
 .my-footer div {
@@ -641,11 +678,17 @@ p {
     align-items    : center;
 }
 
-.my-footer div span {
-    margin: 50px 30px 0px 30px;
+.footer-icons {
+    /* margin: 50px 30px 0px 30px; */
+    padding: 50px 30px 0px 30px; 
 }
 
-.my-footer span {
+.footer-icons i{
+    font-size: 3rem;
+    color: #656D72;
+}
+
+.footer-copy {
     display        : flex;
     flex-direction : row;
     justify-content: center;
@@ -653,36 +696,25 @@ p {
     color          : #656D72;
     /* FONT Cinder Light */
 }
-
+/* **** MOBILE FIRST **** */
 /*  ------------------------>  FOOTER  <------------------------ */
-/*  ------------------------>  REUTILIZABLES  <------------------------ */
-.clipped {
-    /* Para esconder mis h1 lo googlee */
-    clip             : rect(0 0 0 0);
-    border           : 0;
-    -webkit-clip-path: inset(50%);
-    clip-path        : inset(50%);
-    display          : block;
-    margin           : 0 -1px -1px 0;
-    overflow         : hidden;
-    padding          : 0;
-    position         : absolute;
-    z-index          : -1;
-}
 
-.icons-style {
-    /* standar size de iconos*/
-    width : 25px;
-    height: 25px;
-}
 
-.icon-style-big {
-    width : 56px;
-    height: 56px;
-}
 
+
+
+
+
+
+
+
+
+
+
+
+/*  ------------------------>  TODO  <------------------------ */
 /*  ------------------------>  carrera.html  <------------------------ */
-
+/* **** MOBILE FIRST **** */
 
 .career-img {
     display        : flex;
@@ -723,6 +755,7 @@ p {
     color: #656D72;
     /* Cinder Light */
 }
+/* **** MOBILE FIRST **** */
 
 /*  ------------------------>  porfolio.html  <------------------------ */
 

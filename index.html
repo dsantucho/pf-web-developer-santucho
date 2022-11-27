@@ -10,40 +10,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./src/image/favicon.ico" type="image/x-icon">
     <!-- <link rel="stylesheet" href="./src/css/styles.css"> -->
-    <link rel="stylesheet" href="./src/css/mobile_first.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate On Scroll Library => https://michalsnik.github.io/aos/ -->
+    <!-- Boostrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Mi CSS para pisar si es necesario -->
+    <link rel="stylesheet" href="./src/css/styles.css">
     <title>Sitio Personal</title>
 </head>
 
 <body>
-
-    <header>
-        <!-- un menu superior-->
-        <div class="logo-header">
-            <img class="icon-logo" src="./src/image/logo-ds.png" alt="Daniela Logo">
-            <div class="my-name-nav relaway-espaciado ">Daniela Santucho</div>
-        </div>
-        <nav class="header-nav">
-            <div class="menu-options relaway-body">
-                <ul>
-                    <!--menu-->
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages/career.html">Carrera</a></li>
-                    <li><a href="./pages/porfolio.html">Porfolio</a></li>
-                    <li><a href="./pages/about-me.html">Sobre-mi</a></li>
-                    <li><a href="./pages/contact.html">Contacto</a></li>
-                    <!-- TODO quiero un menu desplegable lenguaje-->
-                    <li><img class="icons-style" src="./src/image/language.png" alt="languageIcon"></li>
-                    <li><a href="https://github.com/dsantucho" target="_blank">
-                            <img class="icons-style" src="./src/image/github.png" alt="githubIcon">
+    <header class="navbar navbar-expand-lg">
+        <!-- nav + logo -->
+        <div class="container">
+            <a class="navbar-brand relaway-espaciado" href="./index.html">
+                <img src="./src/image/logo-ds.png" alt="Daniela Logo" class="icon-logo">
+                Daniela Santucho </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end align-items-center relaway-body" id="navbarNav">
+                <ul class="navbar-nav header-nav">
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="./pages/career.html">Carrera</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="./pages/porfolio.html">Porfolio</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="./pages/about-me.html">Sobre-mi</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="./pages/contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item icons-style p-2">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-globe"></i>
                         </a>
                     </li>
-                    <li><a href="https://www.linkedin.com/in/dsantucho/" target="_blank">
-                            <img class="icons-style" src="./src/image/linkedin.png" alt="linkedinIcon">
+                    <li class="nav-item icons-style p-2">
+                        <i class="bi bi-github">
+                            <a class="nav-link" href="https://github.com/dsantucho" target="_blank">
+                            </a>
+                        </i>
+                    </li>
+                    <li class="nav-item icons-style p-2">
+                        <i class="bi bi-linkedin"></i>
+                        <a class="nav-link" href="https://www.linkedin.com/in/dsantucho/" target="_blank">
                         </a>
                     </li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+
+
+        </div>
     </header>
 
     <main>
@@ -58,7 +85,9 @@
             <h1>Hola, soy <strong>Daniela Santucho</strong></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consequuntur quibusdam repellendus,
                 nam voluptas eaque soluta atque natus id accusantium iusto beatae quaerat incidunt quae molestiae,
-                dolores vero! Debitis, eum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, non error, perferendis id voluptas quisquam molestias cumque reprehenderit doloribus nemo, officiis consequatur necessitatibus. Blanditiis, reprehenderit alias quasi suscipit corporis similique.</p>
+                dolores vero! Debitis, eum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, non
+                error, perferendis id voluptas quisquam molestias cumque reprehenderit doloribus nemo, officiis
+                consequatur necessitatibus. Blanditiis, reprehenderit alias quasi suscipit corporis similique.</p>
             <div class="content-btns">
                 <!-- BOTONES-->
                 <a href="./pages/porfolio.html">
@@ -76,47 +105,47 @@
             <!-- Section Specialized in-->
             <label class="relaway-espaciado"> - SERVICES </label>
             <h2>Specialized in</h2>
-                <article>
-                    <div class="icon-services">
-                        <img class="icons-style" src="./src/image/service-icon/service-web-dev.png" alt="iconServiceWD">
-                    </div>
-                    <h3>Web Developer</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi vel quia, quam necessitatibus
-                        quidem
-                        harum atque praesentium aut temporibus quisquam debitis, amet magnam optio vitae cupiditate
-                        saepe?
-                        Repellendus, minus dignissimos?</p>
-                </article>
-                <article>
-                    <div class="icon-services">
-                        <img class="icons-style" src="./src/image/service-icon/service-app.png" alt="iconServiceWD">
-                    </div>
-                    <h3>QA Automation</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae vel ad, maxime, at aliquam atque
-                        odit
-                        laborum mollitia ipsam numquam in quas iusto voluptate nostrum, libero officiis magni. Dolore,
-                        natus!</p>
-                </article>
-                <article>
-                    <div class="icon-services">
-                        <img class="icons-style" src="./src/image/service-icon/service-ux.png" alt="iconServiceWD">
-                    </div>
-                    <h3>Team Leader</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id illum impedit mollitia!
-                        Reprehenderit quia autem odit facilis explicabo quo fuga nesciunt, aliquid odio, ipsum nihil
-                        expedita ullam reiciendis cumque.</p>
-                </article>
+            <article>
+                <div class="icon-services">
+                    <i class="bi bi-code-square"></i>
+                </div>
+                <h3>Web Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi vel quia, quam necessitatibus
+                    quidem
+                    harum atque praesentium aut temporibus quisquam debitis, amet magnam optio vitae cupiditate
+                    saepe?
+                    Repellendus, minus dignissimos?</p>
+            </article>
+            <article>
+                <div class="icon-services">
+                    <i class="bi bi-robot"></i>
+                </div>
+                <h3>QA Automation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae vel ad, maxime, at aliquam atque
+                    odit
+                    laborum mollitia ipsam numquam in quas iusto voluptate nostrum, libero officiis magni. Dolore,
+                    natus!</p>
+            </article>
+            <article>
+                <div class="icon-services">
+                    <i class="bi bi-gem"></i>
+                </div>
+                <h3>Team Leader</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id illum impedit mollitia!
+                    Reprehenderit quia autem odit facilis explicabo quo fuga nesciunt, aliquid odio, ipsum nihil
+                    expedita ullam reiciendis cumque.</p>
+            </article>
         </section> <!-- END Section Specialized in-->
-        <section id="my-tech" >
+        <section id="my-tech">
             <!-- Section Tecnologias iconos -->
-            <img class="logo-brands"src="./src/image/tech-icon/figma.png" alt="figma-icon">
-            <img class="logo-brands"src="./src/image/tech-icon/git.png" alt="git-icon">
-            <img class="logo-brands"src="./src/image/tech-icon/github.png" alt="github-icon">
-            <img class="logo-brands"src="./src/image/tech-icon/github.png" alt="github-icon">
-            <img class="logo-brands"src="./src/image/tech-icon/github.png" alt="github-icon">
-            <img class="logo-brands"src="./src/image/tech-icon/html.png" alt="html-icon">
-            <img class="logo-brands"src="./src/image/tech-icon/javascript.png" alt="js-icon">
-            <img class="logo-brands"src="./src/image/tech-icon/sass.png" alt="sass-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/figma.png" alt="figma-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/git.png" alt="git-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/github.png" alt="github-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/github.png" alt="github-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/github.png" alt="github-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/html.png" alt="html-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/javascript.png" alt="js-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/sass.png" alt="sass-icon">
         </section><!-- END Section Tecnologias iconos -->
         <section id="my-clients">
             <!-- Section Testimonios -->
@@ -163,10 +192,10 @@
         </section><!-- Section Testimonios -->
         <section id="my-skills">
             <!-- Section Educacion y Skills -->
-            <div class="skills-title">
-                <label class="relaway-espaciado"> - Learning path</label>
-                <h2>Education & Skills</h2>
-            </div>
+            <!-- <div class="skills-title"> -->
+            <label class="relaway-espaciado"> - Learning path</label>
+            <h2>Education & Skills</h2>
+            <!-- </div> -->
             <div class="container-skills">
                 <article>
                     <!-- education -->
@@ -224,14 +253,14 @@
         </section>
         <section id="my-companies">
             <!-- Section Tecnologias iconos -->
-            <img class="logo-brands"src="./src/image/tech-icon/figma.png" alt="figma-icon">
-            <img class="logo-brands"src="./src/image/tech-icon/git.png" alt="git-icon">
-            <img class="logo-brands"src="./src/image/tech-icon/github.png" alt="github-icon">
-            <img class="logo-brands"src="./src/image/tech-icon/github.png" alt="github-icon">
-            <img class="logo-brands"src="./src/image/tech-icon/github.png" alt="github-icon">
-            <img class="logo-brands"src="./src/image/tech-icon/html.png" alt="html-icon">
-            <img class="logo-brands"src="./src/image/tech-icon/javascript.png" alt="js-icon">
-            <img class="logo-brands"src="./src/image/tech-icon/sass.png" alt="sass-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/figma.png" alt="figma-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/git.png" alt="git-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/github.png" alt="github-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/github.png" alt="github-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/github.png" alt="github-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/html.png" alt="html-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/javascript.png" alt="js-icon">
+            <img class="logo-brands" src="./src/image/tech-icon/sass.png" alt="sass-icon">
         </section><!-- END Section Tecnologias iconos -->
     </main> <!-- ends main -->
 
@@ -239,23 +268,34 @@
     <footer class="my-footer">
         <div>
             <span class="footer-icons">
-                <a href="./pages/contact.html">
-                    <img src="./src/image/footerIcon/mail.svg" alt="contact me">
-                </a>
+                <i class="bi bi-envelope">
+                    <a href="./pages/contact.html"></a>
+                </i>
             </span>
             <span class="footer-icons">
-                <a href="https://github.com/dsantucho" target="_blank">
-                    <img src="./src/image/footerIcon/Github.png" alt="github">
-                </a>
+                <i class="bi bi-github">
+                    <a href="https://github.com/dsantucho" target="_blank"></a>
+                </i>
             </span>
             <span class="footer-icons">
-                <a href="https://www.linkedin.com/in/dsantucho/" target="_blank">
-                    <img src="./src/image/footerIcon/Linkedin.png" alt="linkedin">
-                </a>
+                <i class="bi bi-linkedin">
+                    <a href="https://www.linkedin.com/in/dsantucho/" target="_blank"></a>
+                </i>
             </span>
         </div>
         <span class="footer-copy font-copyrights"> © 2022 - Copyrights Daniela Santucho</span>
     </footer>
+
+    <!-- Zona scripts-->
+    <!--Script Animate On Scroll Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Script Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
