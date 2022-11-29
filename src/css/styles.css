@@ -16,7 +16,6 @@ html{
 body{
     /* equivale a 10px */
     background : #F9FAFF;
-
 }
 ul,li{
     list-style-type:none;
@@ -52,10 +51,14 @@ ul,li{
 }
 
 .logo-brands{
-    max-height: 55px;
-    max-width     : 55px;
+    max-height: 75px;
+    max-width     : 75px;
+
 }
 
+.w-100{
+    width: 100%;
+}
 /* ------------------------> LETRAS USO GENERAL  <------------------------ */
 
 .relaway-espaciado {
@@ -63,7 +66,7 @@ ul,li{
     font-family   : 'Raleway';
     font-style    : normal;
     font-weight   : 500;
-    font-size     : 1.8rem;
+    font-size     : 1.2rem;
     line-height   : 28px;
     letter-spacing: 7.5px;
     text-transform: uppercase;
@@ -76,7 +79,6 @@ ul,li{
     font-style    : normal;
     font-weight   : 500;
     font-size     : 1.8rem;
-    line-height   : 28px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -174,7 +176,7 @@ p {
 /*  ------------------------>  2 SERVICE  <------------------------ */
 
 
-
+/* HASTA */
 /*  ------------------------>  HEADER NAV  <------------------------ */
 
 header{
@@ -196,44 +198,13 @@ header:hover {
     box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.1);
 }
 
+.navbar-toggler{
+    height: fit-content
+}
 
 /*  ------------------------>    <------------------------ */
-/* **** MOBILE FIRST **** */
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    }
-/* **** MOBILE FIRST **** */
-
-@media (min-width:768px){ /*REVISAR*/
-
-}
 
 /*  ------------------------>  SECTION 1 HEADER MAIN  <------------------------ */
-/* **** MOBILE FIRST **** */
-#my-header {
-    display        : flex;
-    flex-direction : column;
-    justify-content: space-around;
-    align-items    : center;
-    width          : 100%;
-    padding: 15px;
-    margin-bottom  : 10px;
-    gap: 5px;
-}
-
-
-.content-btns { /*acomodo boton*/
-    display        : flex;
-    flex-direction : row;
-    align-items    : center;
-    justify-content: flex-start;
-    padding        : 15px 0px;
-    gap            : 12px;
-    width          : 100%;
-}
 
 .btn-porfolio {
     /* solo corlor y border especificos */
@@ -248,14 +219,11 @@ main{
     color : #25282B;
 }
 
-#button {
-    display        : flex;
-    align-items    : flex-start;
-    justify-content: center;
+.button-custom {
     padding        : 8px 24px;
     width          : 120px;
     height         : 45px;
-    border-radius  : 8px;
+
 }
 
 .content-header p {
@@ -268,87 +236,41 @@ main{
     color: #828282;
 }
 
-#wd-text { /* Luego se le aplicara animacion */
+.wd-text { /* Luego se le aplicara animacion */
     /* WEB DEV FONT DEFF COLOR*/
     color     : #FF9494;
-    /* Inside auto layout */
-    order     : 0;
-    align-self: stretch;
-    flex-grow : 0;
-    display        : flex;
-    justify-content: flex-start;
-    margin-top     : 15px;
+    margin-top     : 30px;
     margin-bottom  : 15px;
 }
-/* **** MOBILE FIRST **** */
-@media (min-width:768px) {
-    #my-header{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(4,auto);
-        grid-template-areas: "jobs img" "title img" "texto img" "btn img";
-        grid-gap: 10px;
-    }
-    #wd-text{
-        grid-area: jobs;
-    }
-    #my-header h1{
-        grid-area: title;
-    }
-    #my-header p{
-        grid-area: texto; 
-    }
-    .img-profile-header{
-        display: grid;
-        grid-area: img;
-        justify-content: center;
-    }
-    #button{
-        grid-area: btn;
-    }
-}
-/*  ------------------------>  1 SECTION SERVICE  <------------------------ */
-/* **** MOBILE FIRST **** */
-#my-services {
-    display         : flex;
-    flex-direction  : column;
-    justify-content : space-around;
-    align-items     : flex-start;
-    width           : 100%;
-    background-color: #FBFBFB;
-    color           : #656D72;
-    /* color font para relaway-espaciado*/
-    padding: 15px;
-    gap: 15px;
+
+.fit-content{
+    width:fit-content;
 }
 
-#my-services article {
-    /* TODO CARD minim size responsive - mediaQuery?*/
-    display        : flex;
-    flex-direction : column;
-    justify-content: flex-start;
-    align-items    : center;
-    /* White */
+/*  ------------------------>  1 SECTION SERVICE  <------------------------ */
+
+.my-services {
+    background-color: #FBFBFB;
+    color           : #656D72;
+}
+
+.my-services article {
     background     : #FFFFFF;
-    border-radius  : 8px;
-    flex-basis     : 350px;
-    height         : 310px;
-    padding        : 20px;
     gap: 10px;
     overflow       : auto;
+    max-width: 450px;
+    max-height: 310px;
 }
 
 .icon-services {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
     padding        : 16px;
+    height: 56px;
+    width: 56px;
     /* light pink */
     background     : rgba(255, 148, 148, 0.2);
-    border-radius  : 16px;
-    margin-top     : 10px;
-    margin-bottom  : 10px;
+    border-radius  : 10px;
 }
+
 .icon-services i{
         /* standar size de iconos*/
         font-size: 2.5rem;
@@ -356,150 +278,45 @@ main{
         padding: 0px;
 }
 
-#my-services article p {
-    display        : flex;
-    justify-content: center;
-    margin         : 0px auto auto auto;
-    /* Piso algunas atributos de font p particulares de cada card */
+.my-services article p {
     font-size      : 1.6rem;
     line-height    : 24px;
-    text-align     : center;
     color          : #232E35;
 }
 
-#my-services article h3 {
+.my-services article h3 {
     color: #232E35;
-}
-/* **** MOBILE FIRST **** */
-@media (min-width: 768px){
-    #my-services{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(3,auto);
-        grid-template-areas: 
-        "titulo-section titulo-section titulo-section"
-        "titulo titulo titulo";
-        grid-gap: 20px;
-        height: 500px;
-    }
-    #my-services label{
-        grid-area: titulo-section;
-        display: grid;
-        justify-content: start;
-    }
-    #my-services h2{
-        grid-area: titulo;
-        display: grid;
-        justify-content: start;
-    }
-
-    #my-services article{
-        width: 85%;
-        margin: 25px;
-    }
 }
 
 /*  ------------------------>  3 SECTION TECH  <------------------------ */
-/* **** MOBILE FIRST **** */
+
 #my-tech {
-    /* pink */
     background     : #FF9494;
     opacity        : 0.2;
-    display        : flex;
-    flex-flow: row wrap;
-    align-items    : center;
-    justify-content: space-around;
-    width          : 100%;
-    margin: 0px;
-    gap: 10px;
-    padding: 10px;
-    overflow: hidden;
-}
-/* **** MOBILE FIRST **** */
-@media (min-width: 768px){
-    #my-tech .logo-brands{
-        max-height: 100px;
-        max-width     : 100px;
-    }
-
-    #my-tech{
-        height: 200px;
-    }
 }
 
 /*  ------------------------>  SECTION COMPNIES LOGOS  <------------------------ */
-/* **** MOBILE FIRST **** */
+
 #my-companies {
     /* pink */
     background     : #FF9494;
     opacity        : 0.2;
-    display        : flex;
-    flex-flow: row wrap;
-    align-items    : center;
-    justify-content: space-around;
-    width          : 100%;
-    margin: 0px;
-    gap: 10px;
-    padding: 10px;
-    overflow: hidden;
-
-}
-/* **** MOBILE FIRST **** */
-@media (min-width: 768px){
-    #my-companies .logo-brands{
-        max-height: 100px;
-        max-width     : 100px;
-    }
-
-    #my-companies{
-        height: 200px;
-    }
 }
 
 /*  ------------------------>  4 SECTION TESTIMONIALS  <------------------------ */
-/* **** MOBILE FIRST **** */
 #my-clients {
-    display        : flex;
-    flex-direction : column;
-    justify-content: center;
-    align-items    : flex-start;
-    width          : 100%;
+  /* color font para relaway-espaciado*/
     color          : #656D72;
-    /* color font para relaway-espaciado*/
-
-}
-
-#my-clients>* {
-    padding: 20px;
-}
-
-#my-clients h2{
-    margin-bottom: 20px;
-}
-
-.testimonials-cards {
-    /*contenedor de todas las cards */
-    display        : flex;
-    flex-direction : column;
-    justify-content: space-around;
-    align-items    : center;
-    width          : 100%;
-    flex-wrap      : wrap;
-    gap            : 60px;
-
 }
 
 .article-testimonials {
-    position       : relative;
-    display        : flex;
-    flex-direction : column;
-    justify-content: space-between;
-    /* Service item */
-    height         : 300px;
+    max-width: calc(100vw - 24px);
+    max-height: 310px;
     /* White */
     background     : #FFFFFF;
     border-radius  : 8px;
     padding        : 50px 25px 15px 25px;
+    margin-top: 40px;
 }
 
 .article-testimonials>span {
@@ -511,192 +328,55 @@ main{
     /* el 50% va a ser del eje x [left] calculo el medio y -48 es la mitad de la foto */
 }
 
-.article-testimonials>p {
-    display        : flex;
-    flex-direction : row;
-    justify-content: flex-start;
-    align-items    : flex-start;
-    /* FONT        : Agrego atributos al p para darle estilo */
+.testimonial-text{
+
     line-height    : 24px;
     color          : #232E35;
     /* Cinder 232E35 */
-    overflow       : auto;
-}
-
-.article-testimonials>div {
-    display        : flex;
-    justify-content: space-between;
-    align-items    : flex-start;
-    flex-direction : column;
-    padding-top: 10px;
+    overflow       : auto;  
 }
 
 .job-title {
-    display        : flex;
-    justify-content: center;
-    flex-direction : row;
-    margin-top     : 5px;
     padding        : 4px 8px;
-    background     : #FBFBFB;
-    /* Light 1 */
+    background-color:#3a709180;
     border-radius  : 4px;
-    color: #656D72;
-    /* FONT Cinder Light */
+    color: #F9FAFF;
+    /* color: #656D72; */
+    width:fit-content;
+
 }
 
 .testimonials-name {
     color: #232E35;
     /* Cinder */
 }
-/* **** MOBILE FIRST **** */
-@media(min-width:768px){
-    .testimonials-cards {
-        flex-direction : row;
-        justify-content: space-around;
-        align-items    : center;
-        width          : 100%;
-        flex-wrap      : wrap;
-        gap            : 15px;
-    }  
-    .article-testimonials{
-        position       : relative;
-        display        : flex;
-        flex-direction : column;
-        justify-content: space-between;
-        /* Service item */
-        width          : 350px;
-        height         : 300px;
-        /* White */
-        background     : #FFFFFF;
-        border-radius  : 8px;
-        padding        : 50px 25px 15px 25px;
-    }
-}
 /*  ------------------------>  5 SECTION SKILLS  <------------------------ */
-/* **** MOBILE FIRST **** */
 #my-skills {
     background-color: #FBFBFB;
-    display        : flex;
-    flex-direction : column;
-    justify-content: center;
-    align-items    : flex-start;
-    width          : 100%;
     color         : #656D72;
     /* color font para relaway-espaciado*/
 }
 
-#my-skills>* {
-    padding: 20px;
-}
-
-/* #my-skills label, h2 {
-    margin-bottom: 40px;
-} */
-
-/* .skills-title {
-    display       : flex;
-    flex-direction: column;
-    color         : #656D72;
-}
-
-.skills-title label {
-    margin-bottom: 40px;
-
-} */
-
-.container-skills {
-    display       : flex;
-    flex-direction: column;
-
-}
-
-.container-skills article {
-    width          : 100%;
-    display        : flex;
-    flex-direction : column;
-    justify-content: space-between;
-    align-content  : flex-start;
-
-}
-
-.container-skills article p {
-    padding-bottom: 10px;
-}
-
-.education label {
-    display: inline-block;
-    margin : 10px 2px 30px 2px;
-}
-
-.education div>* {
-    margin: 2px;
-}
-
-/* TODO: add linea vertical con dots en education 
-.vl{ -> va en el article?
-    border-left: 10px solid #F1F1F1;
-    height: 500px;
-}*/
-
-/* Formar barra de progreso reutilizable*/
-
 .bar-container {
-    /* color */
     background-color: rgba(255, 148, 148, 0.2);
-    /* radius */
-    border-radius   : 2px 0px 0px 2px;
-    margin: 10px 0px;
 }
 
 .progress-container {
-    padding         : 0.01em 16px;
-    height          : 10px;
     background-color: #3A7091;
 }
 /* Formar barra de progreso */
-/* **** MOBILE FIRST **** */
-@media(min-width:768px){
-
-}
 
 /*  ------------------------>  SECTION SKILLS  <------------------------ */
 
 /*  ------------------------>  FOOTER  <------------------------ */
-/* **** MOBILE FIRST **** */
-.my-footer {
-    display        : flex;
-    flex-direction : column;
-    justify-content: space-around;
-    width          : 100%;
-    height: 200px;
-}
-
-.my-footer div {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-}
-
-.footer-icons {
-    /* margin: 50px 30px 0px 30px; */
-    padding: 50px 30px 0px 30px; 
-}
 
 .footer-icons i{
     font-size: 3rem;
     color: #656D72;
 }
-
 .footer-copy {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    margin-bottom  : 50px;
     color          : #656D72;
-    /* FONT Cinder Light */
 }
-/* **** MOBILE FIRST **** */
 /*  ------------------------>  FOOTER  <------------------------ */
 
 
@@ -1008,4 +688,24 @@ height: 100vh;
 
 .datos-contact div span {
     color: #656D72;
+}
+
+
+/* ------------------ 480 breakpoint ------------ */
+
+
+@media only screen and (min-width: 480px) {
+    .navbar-brand.relaway-espaciado{
+        font-size: 1.8rem;
+    }
+
+
+}
+
+/* ------ table portrait -------*/ 
+@media only screen and (min-width: 576px) {
+    .article-testimonials{
+        max-width: 450px;
+    }
+    
 }
