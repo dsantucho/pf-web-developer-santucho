@@ -113,7 +113,7 @@ h2 {
     font-family: 'Plus Jakarta Sans';
     font-style : normal;
     font-weight: 700;
-    font-size  : 3.6rem;
+    font-size  : 3rem;
     line-height: 45px;
     margin     : 0px;
 }
@@ -146,6 +146,14 @@ p {
     font-size  : 1.8rem;
     line-height: 25px;
 
+}
+
+.relaway-p{
+    font-family: 'Raleway';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 1.5rem;
+    line-height: 25px;
 }
 
 .font-inter-normal {
@@ -416,42 +424,12 @@ header:hover {
 /*  ------------------------>  carrera.html  <------------------------ */
 /* **** MOBILE FIRST **** */
 
-.career-img {
-    display        : flex;
-    justify-content: center;
-    margin         : 50px 0px 50px 0px;
-}
+.work-article {
 
-.my-work {
-    /* es la seccion completa de mis trabajos */
-    display        : flex;
-    flex-direction : column;
-    justify-content: center;
-    align-items    : flex-start;
-    width          : 100%;
-}
-
-.my-work>* {
-    margin-left  : 100px;
-    margin-top   : 20px;
-    margin-bottom: 40px;
-}
-
-.container-work article {
-    display       : flex;
-    flex-direction: row;
-    padding       : 10px;
     color         : #232E35;
 }
 
-.container-work article div {
-    display        : flex;
-    flex-direction : row;
-    justify-content: flex-start;
-    padding-right  : 140px;
-}
-
-.container-work article div p {
+.work-article div p {
     color: #656D72;
     /* Cinder Light */
 }
@@ -726,6 +704,10 @@ xxl: 1400px */
 
     .relaway-espaciado{
         font-size: 1.4rem;
+    }
+
+    .relaway-p{
+        font-size: 1.8rem;
     }
 
 
