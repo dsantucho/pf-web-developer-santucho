@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../src/image/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Boostrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!--Boostrap-->
@@ -17,19 +18,24 @@
 </head>
 
 <body>
-    <div class="grid-contact">
-        <!--contenedor general-->
-        <header class="navbar navbar-expand-lg">
-            <!-- nav + logo -->
-            <div class="container">
-                <a class="navbar-brand relaway-espaciado" href="../index.html">
-                    <img src="../src/image/logo-ds.png" alt="Daniela Logo" class="icon-logo">
-                    Daniela Santucho </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <nav class="collapse navbar-collapse justify-content-end align-items-center relaway-body"
+
+    <header class="navbar navbar-expand-lg">
+        <!-- nav + logo -->
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-11 col-lg-6">
+                    <a class="navbar-brand relaway-espaciado text-wrap" href="../index.html">
+                        <img src="../src/image/logo-ds.png" alt="Daniela Logo" class="icon-logo">
+                        Daniela Santucho </a>
+                </div>
+                <!-- button mobile-->
+                <div class="col-1 navbar-toggle-container d-flex justify-content-center align-items-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <nav class="col-lg-6 collapse navbar-collapse justify-content-end align-items-center relaway-body"
                     id="navbarNav">
                     <ul class="navbar-nav header-nav">
                         <li class="nav-item p-2">
@@ -47,28 +53,26 @@
                         <li class="nav-item p-2">
                             <a class="nav-link active" href="./contact.html">Contacto</a>
                         </li>
-                        <li class="nav-item icons-style p-2">
+                        <!-- <li class="nav-item icons-style p-2">
                             <a class="nav-link" href="#">
                                 <i class="bi bi-globe"></i>
                             </a>
+                        </li> -->
+                        <li class="nav-item icons-style p-2">
+                            <a class="nav-link gh" href="https://github.com/dsantucho" target="_blank">
+                                <i class="bi bi-github"></i>
+                            </a>
                         </li>
                         <li class="nav-item icons-style p-2">
-                            <i class="bi bi-github">
-                                <a class="nav-link" href="https://github.com/dsantucho" target="_blank">
-                                </a>
-                            </i>
-                        </li>
-                        <li class="nav-item icons-style p-2">
-                            <i class="bi bi-linkedin"></i>
-                            <a class="nav-link" href="https://www.linkedin.com/in/dsantucho/" target="_blank">
+                            <a class="nav-link lk" href="https://www.linkedin.com/in/dsantucho/" target="_blank">
+                                <i class="bi bi-linkedin"></i>
                             </a>
                         </li>
                     </ul>
                 </nav>
-
-
             </div>
-        </header>
+        </div>
+    </header>
 
         <main class="main-contact">
             <h1 class="clipped">Daniela Santucho Contact</h1>
@@ -145,28 +149,30 @@
 
             </section>
         </main>
+
         <!-- Footer Section -->
         <footer class="my-footer">
-            <div>
-                <span>
-                    <a href="./contact.html">
-                        <img src="../src/image/footerIcon/mail.svg" alt="contact me">
-                    </a>
-                </span>
-                <span>
-                    <a href="https://github.com/dsantucho" target="_blank">
-                        <img src="../src/image/footerIcon/Github.png" alt="github">
-                    </a>
-                </span>
-                <span>
-                    <a href="https://www.linkedin.com/in/dsantucho/" target="_blank">
-                        <img src="../src/image/footerIcon/Linkedin.png" alt="linkedin">
-                    </a>
-                </span>
+            <div class=" container">
+                <div class="row d-flex flex-column">
+                    <div class="footer-icons d-flex justify-content-center my-4">
+                        <i class="bi bi-envelope px-4">
+                            <a href="./contact.html"></a>
+                        </i>
+                        <i class="bi bi-github px-4">
+                            <a href="https://github.com/dsantucho" target="_blank"></a>
+                        </i>
+                        <i class="bi bi-linkedin px-4">
+                            <a href="https://www.linkedin.com/in/dsantucho/" target="_blank"></a>
+                        </i>
+                    </div>
+        
+                    <span class=" d-flex justify-content-center footer-copy font-copyrights my-3"> © 2022 - Copyrights
+                        Daniela
+                        Santucho</span>
+                </div>
             </div>
-            <span class="font-copyrights"> © 2022 - Copyrights Daniela Santucho</span>
         </footer>
-    </div>
+
     <!-- Zona scripts-->
     <!--Script Animate On Scroll Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
