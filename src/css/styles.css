@@ -40,6 +40,17 @@ ul,li{
     font-size: 2rem;
 }
 
+.icons-style:hover>a.gh{
+    color: #000000;
+    cursor: pointer;
+}
+
+.icons-style:hover>a.lk{
+    color: #0a66c2;
+    cursor: pointer;
+}
+
+
 .icon-style-big {
     width : 56px;
     height: 56px;
@@ -66,7 +77,7 @@ ul,li{
     font-family   : 'Raleway';
     font-style    : normal;
     font-weight   : 500;
-    font-size     : 1.2rem;
+    font-size     : 1.1rem; /*size para iphone */
     line-height   : 28px;
     letter-spacing: 7.5px;
     text-transform: uppercase;
@@ -91,7 +102,7 @@ h1 {
     /* si es normal o italic */
     font-weight: 700;
     /* si es normal o bold */
-    font-size  : 6.4rem;
+    font-size  : 3.2rem;
     /* el tamano en nro o porcentaje */
     line-height: 100%;
     color      : #000000;
@@ -133,7 +144,7 @@ p {
     font-style : normal;
     font-weight: 500;
     font-size  : 1.8rem;
-    line-height: 28px;
+    line-height: 25px;
 
 }
 
@@ -191,7 +202,6 @@ header{
 .header-nav {
     --bs-nav-link-padding-x: 0;
     --bs-nav-link-padding-y: 0;
-    gap            : 10px;
 }
 
 header:hover {
@@ -206,24 +216,34 @@ header:hover {
 
 /*  ------------------------>  SECTION 1 HEADER MAIN  <------------------------ */
 
-.btn-porfolio {
-    /* solo corlor y border especificos */
+.btn-primary{
     background: #FF9494;
     color     : #25282B;
     border    : 2px solid #FF9494;
+    transition: all 0.25s ease; /* easing function */
 }
 
-.btn-linked {
-    /* solo corlor y border especificos */
-    border: 2px solid #25282B;
-    color : #25282B;
+.btn-primary:hover{
+    background: #3a7091;
+    color     : #FFFFFF;
+    border    : 2px solid #3a7091;
+}
+
+.btn-secondary{
+    background: #FFFFFF;
+    color     : #25282B;
+    border    : 2px solid #25282B;
+    transition: all 0.25s ease; /* easing function */
+}
+
+.btn-secondary:hover{
+    background: #25282B;
 }
 
 .button-custom {
     padding        : 8px 24px;
     width          : 120px;
     height         : 45px;
-
 }
 
 .content-header p {
@@ -239,8 +259,6 @@ header:hover {
 .wd-text { /* Luego se le aplicara animacion */
     /* WEB DEV FONT DEFF COLOR*/
     color     : #FF9494;
-    margin-top     : 30px;
-    margin-bottom  : 15px;
 }
 
 .fit-content{
@@ -259,7 +277,7 @@ header:hover {
     gap: 10px;
     overflow       : auto;
     max-width: 450px;
-    max-height: 310px;
+    max-height: 400px;
 }
 
 .icon-services {
@@ -312,11 +330,13 @@ header:hover {
 .article-testimonials {
     max-width: calc(100vw - 24px);
     max-height: 310px;
+    min-height: 310px;
+
     /* White */
     background     : #FFFFFF;
     border-radius  : 8px;
     padding        : 50px 25px 15px 25px;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .article-testimonials>span {
@@ -692,11 +712,20 @@ height: 100vh;
 
 
 /* ------------------ 480 breakpoint ------------ */
-
+/* xs: 0,
+sm: 576px, mobile
+md: 768px, mobile
+lg: 992px, cambia menu - cambio web
+xl: 1200px,
+xxl: 1400px */
 
 @media only screen and (min-width: 480px) {
     .navbar-brand.relaway-espaciado{
-        font-size: 1.8rem;
+        font-size: 1.8rem;/* solo el navbar*/
+    }
+
+    .relaway-espaciado{
+        font-size: 1.4rem;
     }
 
 
@@ -705,7 +734,47 @@ height: 100vh;
 /* ------ table portrait -------*/ 
 @media only screen and (min-width: 576px) {
     .article-testimonials{
-        max-width: 450px;
+        max-width: 450px; 
     }
     
+}
+@media only screen and (min-width: 992px) {
+    .relaway-body, p {
+        font-size: 1.4rem;
+    }
+
+    div.navbar-toggle-container{
+        display: none !important;
+    }
+
+    nav{
+        flex-grow: 0;
+    }
+
+    /* esto es lo que hace image fluid*/
+    .img-custom{
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width:1201px){
+
+    h1{
+        font-size: 4rem;
+    }
+    .relaway-body, p {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (min-width:1401px){
+
+    h1{
+        font-size: 6rem;
+    }
+    .relaway-body, p {
+        font-size: 2rem;
+    }
 }
