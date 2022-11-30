@@ -462,6 +462,7 @@ header:hover {
     border       : 1px solid #F1F1F1;
     border-radius: 4px;
     /* margin-right : 20px; */
+    transition: all 0.25s ease; 
 }
 
 .technology:hover{
