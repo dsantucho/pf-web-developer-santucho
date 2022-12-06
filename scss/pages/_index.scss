@@ -36,6 +36,14 @@ body{
                     &.div-testimonials{
                         overflow: auto;
                     }
+                    &.progress{
+                        background-color:$color-background-icons;
+                    }
+                    div{
+                        &.progress-bar{
+                            background-color: $color-blue;
+                        }
+                    }
                 }
                 h3{
                     color:$color-font-primary;

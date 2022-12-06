@@ -243,6 +243,14 @@ section article.card-testimonials div label.job-title {
   color: #F9FAFF;
   width: fit-content;
 }
+footer div a i {
+  font-size: 2rem;
+  color: #656D72;
+}
+footer span {
+  color: #656D72;
+}
+
 body {
   background: #F9FAFF;
 }
@@ -267,6 +275,12 @@ body main section p {
 }
 body main section article div.div-testimonials {
   overflow: auto;
+}
+body main section article div.progress {
+  background-color: rgba(255, 148, 148, 0.2);
+}
+body main section article div div.progress-bar {
+  background-color: #3A7091;
 }
 body main section article h3 {
   color: #25282B;
