@@ -1,0 +1,87 @@
+@import './variables';
+
+
+h1, h2, h3, h4, h5, h6, a, label{
+        font-family: 'Raleway';
+        font-style : normal;
+    &.titles{
+        font-size: $font-size-title-mb;
+        font-weight: 700;
+        line-height: 100%;
+        color: $color-font-primary;
+    }
+    &.subtitle{
+        font-weight: 700;
+        font-size  : $font-size-subtitles-mb;
+        line-height: 45px;
+    }
+    &.label-subtitle{
+        font-weight: 500;
+        font-size: $font-size-mb;
+        line-height: 28px;
+        letter-spacing: 7.5px;
+        text-transform: uppercase;
+    }
+    &.espaciado{
+        letter-spacing: 7.5px;
+        text-transform: uppercase;
+        line-height   : 28px;
+        font-size: $font-size-mb;
+        @media only screen and (min-width: 480px) {
+            font-size: $font-size-xxl;
+        }
+    }
+    &.raleway-body{
+        font-size: $font-size-sm;
+    }
+    &.font-job-title{
+        font-family: 'Inter';
+        font-style : normal;
+        font-size  : $font-size-mb;
+    }
+
+}
+
+nav{
+    &.font-nav{
+        a{
+            font-weight: 500;
+            font-size  : $font-size-lg;
+            line-height: 25px;
+        }
+    }
+}
+
+span, p, textarea{
+    font-family: 'Plus Jakarta Sans'; //'Inter';
+    font-style : normal;
+    font-size: $font-size-sm;
+    &.text-center{
+        text-align : center;
+    }
+    &.light{
+        font-weight: 300;
+    }
+    &.copyright{
+        font-family: 'Inter';
+        font-style : normal;
+        font-weight: 400;
+        font-size  : $font-size-sm;
+        line-height: 17px;
+    }
+    &.font-web-dev{
+        font-family   : 'Raleway';
+        font-style    : normal;
+        font-weight   : 500;
+        font-size     : $font-size-mb;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    &.testimonial-text{
+        line-height    : 24px;
+        color          : $color-font-text;
+    }
+}
+
+
+

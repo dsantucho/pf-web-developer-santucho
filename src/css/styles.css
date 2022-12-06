@@ -1,3 +1,278 @@
+.custom-my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
+.custom-my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.custom-my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.custom-my-4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.custom-my-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.custom-my-6 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+h1, h2, h3, h4, h5, h6, a, label {
+  font-family: "Raleway";
+  font-style: normal;
+}
+h1.titles, h2.titles, h3.titles, h4.titles, h5.titles, h6.titles, a.titles, label.titles {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 100%;
+  color: #25282B;
+}
+h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle, h6.subtitle, a.subtitle, label.subtitle {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 45px;
+}
+h1.label-subtitle, h2.label-subtitle, h3.label-subtitle, h4.label-subtitle, h5.label-subtitle, h6.label-subtitle, a.label-subtitle, label.label-subtitle {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 28px;
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
+}
+h1.espaciado, h2.espaciado, h3.espaciado, h4.espaciado, h5.espaciado, h6.espaciado, a.espaciado, label.espaciado {
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
+  line-height: 28px;
+  font-size: 1.1rem;
+}
+@media only screen and (min-width: 480px) {
+  h1.espaciado, h2.espaciado, h3.espaciado, h4.espaciado, h5.espaciado, h6.espaciado, a.espaciado, label.espaciado {
+    font-size: 1.8rem;
+  }
+}
+h1.raleway-body, h2.raleway-body, h3.raleway-body, h4.raleway-body, h5.raleway-body, h6.raleway-body, a.raleway-body, label.raleway-body {
+  font-size: 1.2rem;
+}
+h1.font-job-title, h2.font-job-title, h3.font-job-title, h4.font-job-title, h5.font-job-title, h6.font-job-title, a.font-job-title, label.font-job-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+nav.font-nav a {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 25px;
+}
+
+span, p, textarea {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-size: 1.2rem;
+}
+span.text-center, p.text-center, textarea.text-center {
+  text-align: center;
+}
+span.light, p.light, textarea.light {
+  font-weight: 300;
+}
+span.copyright, p.copyright, textarea.copyright {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 17px;
+}
+span.font-web-dev, p.font-web-dev, textarea.font-web-dev {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+span.testimonial-text, p.testimonial-text, textarea.testimonial-text {
+  line-height: 24px;
+  color: #232E35;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: solid 1px #9A9FA8;
+  transition: all 0.5s ease;
+  z-index: 10;
+  color: #25282B;
+}
+header:hover {
+  box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.1);
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #656D72;
+}
+header nav ul li.nav-link.active {
+  color: #25282B;
+}
+
+li.icons-style:hover a.gh {
+  color: #000000;
+  cursor: pointer;
+}
+li.icons-style:hover a.lk {
+  color: #0a66c2;
+  cursor: pointer;
+}
+
+a.button-custom {
+  padding: 8px 24px;
+  width: 120px;
+}
+a.button-custom.btn-primary {
+  background: #FF9494;
+  color: #25282B;
+  border: 2px solid #FF9494;
+  transition: all 0.25s ease; /* easing function */
+}
+a.button-custom.btn-primary:hover {
+  background: #3A7091;
+  color: #FFFFFF;
+  border: 2px solid #3A7091;
+}
+a.button-custom.btn-secondary {
+  background: #FFFFFF;
+  color: #25282B;
+  border: 2px solid #25282B;
+  transition: all 0.25s ease; /* easing function */
+}
+a.button-custom.btn-secondary:hover {
+  background: #25282B;
+  color: #FFFFFF;
+}
+
+img.logo-brand {
+  max-height: 4rem;
+  max-width: 4rem;
+}
+img.icon-logo {
+  max-height: 8rem;
+  max-width: 8rem;
+}
+
+li.icons-style {
+  font-size: 2rem;
+}
+
+article div.icon-services {
+  padding: 16px;
+  height: 56px;
+  width: 56px;
+  background: rgba(255, 148, 148, 0.2);
+  border-radius: 10px;
+}
+article div.icon-services i {
+  font-size: 2rem;
+  color: #FF9494;
+  padding: 0px;
+}
+
+section article.cards-icon {
+  background: #FFFFFF;
+  gap: 10px;
+  overflow: auto;
+  max-width: 450px;
+  max-height: 400px;
+}
+section article.card-testimonials {
+  max-width: calc(100vw - 24px);
+  max-height: 310px;
+  min-height: 310px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 50px 25px 15px 25px;
+  margin-top: 80px;
+}
+section article.card-testimonials span {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -48px;
+  left: calc(50% - 48px);
+}
+section article.card-testimonials div a {
+  text-decoration: none;
+  color: #232E35;
+}
+section article.card-testimonials div label.job-title {
+  padding: 4px 8px;
+  background-color: rgba(58, 112, 145, 0.5019607843);
+  border-radius: 4px;
+  color: #F9FAFF;
+  width: fit-content;
+}
+body {
+  background: #F9FAFF;
+}
+body header a {
+  color: #25282B;
+}
+body main section.bk-color-secondary {
+  background-color: #FBFBFB;
+}
+body main section.bk-color-banner {
+  background: #FF9494;
+  opacity: 0.2;
+}
+body main section div label.label-subtitle {
+  color: #656D72;
+}
+body main section span.wd-text {
+  color: #FF9494;
+}
+body main section p {
+  color: #656D72;
+}
+body main section article div.div-testimonials {
+  overflow: auto;
+}
+body main section article h3 {
+  color: #25282B;
+}
+body main section article h4 {
+  color: #656D72;
+}
 
 /*# sourceMappingURL=styles.css.map */

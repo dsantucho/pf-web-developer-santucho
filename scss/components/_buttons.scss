@@ -1,0 +1,67 @@
+// voy a tener mis botones con sus efectos. 
+
+// button{
+//     &.navbar-toggler{
+//         // width:fit-content;
+//     }
+// }
+
+li{
+    &.icons-style{
+        &:hover{
+            a{
+                &.gh{
+                    color: $color-github;
+                    cursor: pointer; 
+                }
+                &.lk{
+                    color: $color-linkedin;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+a{
+    &.button-custom{
+        padding        : 8px 24px;
+        width          : 120px;
+        // height         : 45px;
+        &.btn-primary{
+            background: $color-pink;
+            color     : $color-font-primary;
+            border    : 2px solid $color-pink;
+            transition: all 0.25s ease; /* easing function */
+            &:hover{
+                background: $color-blue;
+                color     : $color-white;
+                border    : 2px solid $color-blue;
+            }
+        }
+        &.btn-secondary{
+            background: $color-white;
+            color     : $color-font-primary;
+            border    : 2px solid $color-font-primary;
+            transition: all 0.25s ease; /* easing function */
+            &:hover{
+                background: $color-font-primary;
+                color     : $color-white;
+            }
+        }
+    }
+}
+    // .navbar-toggler{
+    //     height: fit-content
+    // }
+// .icons-style {
+//     font-size: 2rem;
+// }
+
+// .icon-style-big {
+//     width : 56px;
+//     height: 56px;
+// }
+
+//botones en navbar 
+
