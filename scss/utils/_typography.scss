@@ -9,11 +9,23 @@ h1, h2, h3, h4, h5, h6, a, label{
         font-weight: 700;
         line-height: 100%;
         color: $color-font-primary;
+        @include mobile-lg(){ //480px
+            font-size:$font-size-title-lg;
+        }
+        @include web-sm(){
+            font-size: $font-size-title-xl;
+        }
+        @include web-lg(){
+            font-size: $font-size-title-xxl;
+        }
     }
     &.subtitle{
         font-weight: 700;
         font-size  : $font-size-subtitles-mb;
         line-height: 45px;
+        @include mobile-lg(){ //480px
+            font-size:$font-size-subtitles-lg;
+        }
     }
     &.label-subtitle{
         font-weight: 500;
@@ -21,23 +33,35 @@ h1, h2, h3, h4, h5, h6, a, label{
         line-height: 28px;
         letter-spacing: 7.5px;
         text-transform: uppercase;
+        @include mobile-lg(){ //480px
+            font-size:$font-size-lg;
+        }
     }
     &.espaciado{
         letter-spacing: 7.5px;
         text-transform: uppercase;
         line-height   : 28px;
         font-size: $font-size-mb;
-        @media only screen and (min-width: 480px) {
+        @include mobile-lg(){ //480px
             font-size: $font-size-xxl;
         }
     }
     &.raleway-body{
         font-size: $font-size-sm;
+        @include mobile-lg(){ //480px
+            font-size: $font-size-lg;
+        }
+        @include web-sm(){
+            font-size: $font-size-xxl;
+        }
     }
     &.font-job-title{
         font-family: 'Inter';
         font-style : normal;
         font-size  : $font-size-mb;
+        @include mobile-lg(){ //480px
+            font-size: $font-size-sm;
+        }
     }
 
 }
@@ -56,6 +80,12 @@ span, p, textarea{
     font-family: 'Plus Jakarta Sans'; //'Inter';
     font-style : normal;
     font-size: $font-size-sm;
+    @include mobile-lg(){ //480px
+        font-size: $font-size-lg;
+    }
+    @include web-sm(){
+        font-size: $font-size-xxl;
+    }
     &.text-center{
         text-align : center;
     }
@@ -76,6 +106,9 @@ span, p, textarea{
         font-size     : $font-size-mb;
         letter-spacing: 2px;
         text-transform: uppercase;
+        @include mobile-lg(){ //480px
+            font-size: $font-size-lg;
+        }
     }
     &.testimonial-text{
         line-height    : 24px;

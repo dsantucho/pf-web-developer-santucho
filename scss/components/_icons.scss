@@ -3,6 +3,10 @@ img{
     &.logo-brand{
         max-height: $icon-size-lg;
         max-width     : $icon-size-lg;
+        @include mobile-lg(){ //480px
+            max-height: $icon-size-xl;
+            max-width     : $icon-size-xl;
+        }
     }
     &.icon-logo{
         max-height: $icon-size-xl; //70px;
@@ -31,10 +35,6 @@ article{
             }
         }
     }
-}
-
-footer{
-
 }
 
 // .logo-brands{
