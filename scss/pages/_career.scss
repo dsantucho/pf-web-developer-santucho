@@ -1,0 +1,29 @@
+body{
+    background : $color-background-primary;
+
+    header{
+        a{
+            color: $color-font-primary;
+        }
+    }
+
+    main{
+        section{
+            div{
+                label{
+                    &.label-subtitle{
+                        color: $color-font-secondary; //color del font
+                    }
+                }
+                article{
+                    p{
+                        color: $color-font-secondary;
+                    }
+                    h3{
+                        color:$color-font-primary;
+                    }
+                }
+            }
+        }
+    }
+}

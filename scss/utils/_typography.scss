@@ -63,7 +63,19 @@ h1, h2, h3, h4, h5, h6, a, label{
             font-size: $font-size-sm;
         }
     }
-
+    &.clipped {
+        /* Para esconder mis h1 lo googlee */
+        clip             : rect(0 0 0 0);
+        border           : 0;
+        -webkit-clip-path: inset(50%);
+        clip-path        : inset(50%);
+        display          : block;
+        margin           : 0 -1px -1px 0;
+        overflow         : hidden;
+        padding          : 0;
+        position         : absolute;
+        z-index          : -1;
+    }
 }
 
 nav{

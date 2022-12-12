@@ -7,19 +7,6 @@
 
 
 /*  ------------------------>  REUTILIZABLES  <------------------------ */
-.clipped {
-    /* Para esconder mis h1 lo googlee */
-    clip             : rect(0 0 0 0);
-    border           : 0;
-    -webkit-clip-path: inset(50%);
-    clip-path        : inset(50%);
-    display          : block;
-    margin           : 0 -1px -1px 0;
-    overflow         : hidden;
-    padding          : 0;
-    position         : absolute;
-    z-index          : -1;
-}
 
 
 
@@ -118,16 +105,6 @@
 /*  ------------------------>  TODO  <------------------------ */
 /*  ------------------------>  carrera.html  <------------------------ */
 /* **** MOBILE FIRST **** */
-
-.work-article {
-
-    color         : #232E35;
-}
-
-.work-article div p {
-    color: #656D72;
-    /* Cinder Light */
-}
 /* **** MOBILE FIRST **** */
 
 /*  ------------------------>  porfolio.html  <------------------------ */

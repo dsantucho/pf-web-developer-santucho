@@ -109,6 +109,19 @@ h1.font-job-title, h2.font-job-title, h3.font-job-title, h4.font-job-title, h5.f
     font-size: 1.2rem;
   }
 }
+h1.clipped, h2.clipped, h3.clipped, h4.clipped, h5.clipped, h6.clipped, a.clipped, label.clipped {
+  /* Para esconder mis h1 lo googlee */
+  clip: rect(0 0 0 0);
+  border: 0;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  display: block;
+  margin: 0 -1px -1px 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  z-index: -1;
+}
 
 nav.font-nav a {
   font-weight: 500;
@@ -391,6 +404,22 @@ body main section article h3 {
 }
 body main section article h4 {
   color: #656D72;
+}
+
+body {
+  background: #F9FAFF;
+}
+body header a {
+  color: #25282B;
+}
+body main section div label.label-subtitle {
+  color: #656D72;
+}
+body main section div article p {
+  color: #656D72;
+}
+body main section div article h3 {
+  color: #25282B;
 }
 
 /*# sourceMappingURL=styles.css.map */
