@@ -14,4 +14,12 @@ ul, ol{
 
 a{
     text-decoration: none;
+    &:link{
+        color: $color-font-primary;
+        text-decoration: none;
+    }
+    &:hover{
+        text-decoration: none;
+    }
+
 }

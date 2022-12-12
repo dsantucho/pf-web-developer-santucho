@@ -10,6 +10,9 @@ section{
             @include tablet-sm(){
                 max-width: 550px; 
             }
+            @include web-lg(){
+                max-width: 650px; 
+            }
         }
         &.card-testimonials{
             max-width: calc(100vw - 24px);
@@ -22,6 +25,9 @@ section{
             margin-top: 80px;
             @include tablet-sm(){
                 max-width: 450px; 
+            }
+            @include web-lg(){
+                max-width: 550px; 
             }
             
             span{

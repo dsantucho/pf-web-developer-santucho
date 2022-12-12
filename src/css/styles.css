@@ -72,7 +72,7 @@ h1.label-subtitle, h2.label-subtitle, h3.label-subtitle, h4.label-subtitle, h5.l
 }
 @media (min-width: 480px) {
   h1.label-subtitle, h2.label-subtitle, h3.label-subtitle, h4.label-subtitle, h5.label-subtitle, h6.label-subtitle, a.label-subtitle, label.label-subtitle {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 h1.espaciado, h2.espaciado, h3.espaciado, h4.espaciado, h5.espaciado, h6.espaciado, a.espaciado, label.espaciado {
@@ -83,7 +83,7 @@ h1.espaciado, h2.espaciado, h3.espaciado, h4.espaciado, h5.espaciado, h6.espacia
 }
 @media (min-width: 480px) {
   h1.espaciado, h2.espaciado, h3.espaciado, h4.espaciado, h5.espaciado, h6.espaciado, a.espaciado, label.espaciado {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 h1.raleway-body, h2.raleway-body, h3.raleway-body, h4.raleway-body, h5.raleway-body, h6.raleway-body, a.raleway-body, label.raleway-body {
@@ -91,12 +91,12 @@ h1.raleway-body, h2.raleway-body, h3.raleway-body, h4.raleway-body, h5.raleway-b
 }
 @media (min-width: 480px) {
   h1.raleway-body, h2.raleway-body, h3.raleway-body, h4.raleway-body, h5.raleway-body, h6.raleway-body, a.raleway-body, label.raleway-body {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1201px) {
   h1.raleway-body, h2.raleway-body, h3.raleway-body, h4.raleway-body, h5.raleway-body, h6.raleway-body, a.raleway-body, label.raleway-body {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 h1.font-job-title, h2.font-job-title, h3.font-job-title, h4.font-job-title, h5.font-job-title, h6.font-job-title, a.font-job-title, label.font-job-title {
@@ -112,7 +112,7 @@ h1.font-job-title, h2.font-job-title, h3.font-job-title, h4.font-job-title, h5.f
 
 nav.font-nav a {
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 25px;
 }
 
@@ -123,12 +123,12 @@ span, p, textarea {
 }
 @media (min-width: 480px) {
   span, p, textarea {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1201px) {
   span, p, textarea {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 span.text-center, p.text-center, textarea.text-center {
@@ -154,7 +154,7 @@ span.font-web-dev, p.font-web-dev, textarea.font-web-dev {
 }
 @media (min-width: 480px) {
   span.font-web-dev, p.font-web-dev, textarea.font-web-dev {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 span.testimonial-text, p.testimonial-text, textarea.testimonial-text {
@@ -177,6 +177,13 @@ ul, ol {
 }
 
 a {
+  text-decoration: none;
+}
+a:link {
+  color: #25282B;
+  text-decoration: none;
+}
+a:hover {
   text-decoration: none;
 }
 
@@ -258,6 +265,12 @@ img.logo-brand {
     max-width: 6rem;
   }
 }
+@media (min-width: 1201px) {
+  img.logo-brand {
+    max-height: 8rem;
+    max-width: 8rem;
+  }
+}
 img.icon-logo {
   max-height: 6rem;
   max-width: 6rem;
@@ -292,6 +305,11 @@ section article.cards-icon {
     max-width: 550px;
   }
 }
+@media (min-width: 1401px) {
+  section article.cards-icon {
+    max-width: 650px;
+  }
+}
 section article.card-testimonials {
   max-width: calc(100vw - 24px);
   max-height: 310px;
@@ -304,6 +322,11 @@ section article.card-testimonials {
 @media (min-width: 576px) {
   section article.card-testimonials {
     max-width: 450px;
+  }
+}
+@media (min-width: 1401px) {
+  section article.card-testimonials {
+    max-width: 550px;
   }
 }
 section article.card-testimonials span {
