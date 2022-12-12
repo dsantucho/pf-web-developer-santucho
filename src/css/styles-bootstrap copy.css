@@ -360,68 +360,10 @@ lg: 992px, cambia menu - cambio web
 xl: 1200px,
 xxl: 1400px */
 
-@media only screen and (min-width: 480px) {
-    .navbar-brand.relaway-espaciado{
-        font-size: 1.8rem;/* solo el navbar*/
-    }
-
-    .relaway-espaciado{
-        font-size: 1.4rem;
-    }
-
-    .relaway-p{
-        font-size: 1.8rem;
-    }
-
-
-}
 
 /* ------ table portrait -------*/ 
-@media only screen and (min-width: 576px) {
-    .article-testimonials{
-        max-width: 450px; 
-    }
-    
-}
-@media only screen and (min-width: 992px) {
-    .relaway-body, p {
-        font-size: 1.4rem;
-    }
-
-    div.navbar-toggle-container{
-        display: none !important;
-    }
-
-    nav{
-        flex-grow: 0;
-    }
-
-    /* esto es lo que hace image fluid*/
-    .img-custom{
-        max-width: 100%;
-        width: auto;
-        height: auto;
-    }
-}
-
-@media only screen and (min-width:1201px){
-
-    h1{
-        font-size: 4rem;
-    }
-    .relaway-body, p {
-        font-size: 1.8rem;
-    }
-}
 
 @media only screen and (min-width:1401px){
-
-    h1{
-        font-size: 6rem;
-    }
-    .relaway-body, p {
-        font-size: 2rem;
-    }
 
     .p-card-porfolio{
         font-size  : 1.6rem;
