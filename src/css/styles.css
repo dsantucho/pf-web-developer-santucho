@@ -83,7 +83,7 @@ h1.espaciado, h2.espaciado, h3.espaciado, h4.espaciado, h5.espaciado, h6.espacia
 }
 @media (min-width: 480px) {
   h1.espaciado, h2.espaciado, h3.espaciado, h4.espaciado, h5.espaciado, h6.espaciado, a.espaciado, label.espaciado {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 h1.raleway-body, h2.raleway-body, h3.raleway-body, h4.raleway-body, h5.raleway-body, h6.raleway-body, a.raleway-body, label.raleway-body {
@@ -96,7 +96,7 @@ h1.raleway-body, h2.raleway-body, h3.raleway-body, h4.raleway-body, h5.raleway-b
 }
 @media (min-width: 1201px) {
   h1.raleway-body, h2.raleway-body, h3.raleway-body, h4.raleway-body, h5.raleway-body, h6.raleway-body, a.raleway-body, label.raleway-body {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 h1.font-job-title, h2.font-job-title, h3.font-job-title, h4.font-job-title, h5.font-job-title, h6.font-job-title, a.font-job-title, label.font-job-title {
@@ -141,7 +141,7 @@ span, p, textarea {
 }
 @media (min-width: 1201px) {
   span, p, textarea {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 span.text-center, p.text-center, textarea.text-center {
@@ -268,6 +268,18 @@ a.button-custom.btn-secondary:hover {
   color: #FFFFFF;
 }
 
+label.technology {
+  padding: 4px 8px;
+  border: 1px solid #9A9FA8;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+label.technology:hover {
+  background-color: #3A7091;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
 img.logo-brand {
   max-height: 4rem;
   max-width: 4rem;
@@ -360,6 +372,13 @@ section article.card-testimonials div label.job-title {
   color: #F9FAFF;
   width: fit-content;
 }
+section div { /* es en profolio */ }
+section div article div.card-img-custom {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+}
+
 footer div a i {
   font-size: 2rem;
   color: #656D72;
@@ -420,6 +439,31 @@ body main section div article p {
 }
 body main section div article h3 {
   color: #25282B;
+}
+
+body {
+  background: #F9FAFF;
+}
+body header a {
+  color: #25282B;
+}
+body main section div label.label-subtitle {
+  color: #656D72;
+}
+body main section div article p {
+  color: #656D72;
+}
+body main section div article h3 {
+  color: #25282B;
+}
+body main section div article div.card div.card-img-custom.ejemplo-1 {
+  background-image: url("../image/porfolio/porfolio-ejemplo-1.png");
+}
+body main section div article div.card div.card-img-custom.ejemplo-2 {
+  background-image: url("../image/porfolio/porfolio-ejemplo-2.png");
+}
+body main section div article div.card div.card-img-custom.ejemplo-3 {
+  background-image: url("../image/porfolio/porfolio-ejemplo-3.png");
 }
 
 /*# sourceMappingURL=styles.css.map */

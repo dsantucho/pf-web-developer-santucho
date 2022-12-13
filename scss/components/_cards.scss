@@ -60,6 +60,17 @@ section{
 
         }
     }
+    div{ /* es en profolio */
+        article{
+            div{
+                &.card-img-custom{
+                    width: 100%;
+                    height: 200px;
+                    background-size: cover;
+                }
+            }
+        }
+    }
 }
 
 //cards-img ex porfolio porfolio.html

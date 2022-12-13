@@ -31,20 +31,6 @@
 }
 
 
-.p-card-porfolio{
-    font-family: 'Raleway';
-    font-style : normal;
-    font-size  : 1.2rem;
-    line-height: 25px;
-}
-.h3-card-porfolio{
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-size: 1.6rem;
-    line-height: 25px;
-}
-
-
 /*  ------------------------>  2 SERVICE  <------------------------ */
 
 
@@ -108,47 +94,6 @@
 /* **** MOBILE FIRST **** */
 
 /*  ------------------------>  porfolio.html  <------------------------ */
-
-.my-porfolio-color {
-    color          : #656D72;
-}
-
-.h3-color-porfolio {
-    color       : #232E35;
-}
-
-.technology {
-    padding      : 4px 8px;
-    border       : 1px solid #F1F1F1;
-    border-radius: 4px;
-    /* margin-right : 20px; */
-    transition: all 0.25s ease; 
-}
-
-.technology:hover{
-    background-color: #3a7091;
-    color: #FFFFFF;
-    cursor:pointer;
-}
-
-.card-img-custom{
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-}
-
-.card-img-custom.ejemplo-1{
-    background-image: url('../image/porfolio/porfolio-ejemplo-1.png');
-}
-
-.card-img-custom.ejemplo-2{
-    background-image: url('../image/porfolio/porfolio-ejemplo-2.png');
-}
-
-.card-img-custom.ejemplo-3{
-    background-image: url('../image/porfolio/porfolio-ejemplo-3.png');
-}
-
 /*  ------------------------>  about-me.html  <------------------------ */
 .about-me {
     display        : flex;
