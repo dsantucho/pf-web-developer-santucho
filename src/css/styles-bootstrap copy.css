@@ -90,63 +90,8 @@
 
 /*  ------------------------>  TODO  <------------------------ */
 /*  ------------------------>  carrera.html  <------------------------ */
-/* **** MOBILE FIRST **** */
-/* **** MOBILE FIRST **** */
-
 /*  ------------------------>  porfolio.html  <------------------------ */
 /*  ------------------------>  about-me.html  <------------------------ */
-.about-me {
-    display        : flex;
-    flex-direction : column;
-    justify-content: flex-start;
-    align-items    : flex-start;
-    width          : 100%;
-}
-
-.about-me>* {
-    margin-left  : 100px;
-    margin-top   : 20px;
-    margin-bottom: 40px;
-    margin-right : 100px;
-}
-
-.about-me p,
-.about-me h2 {
-    /* Cinder */
-    color: #232E35;
-}
-
-.art-img {
-    display       : flex;
-    flex-direction: row;
-}
-
-.art-img div {
-    width: 50%;
-}
-
-.about-me-text {
-    display        : flex;
-    flex-direction : column;
-    justify-content: flex-start;
-    align-items    : flex-start;
-}
-
-.about-me-img {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-}
-
-.art-video {
-    display       : flex;
-    flex-direction: row;
-}
-
-.art-video div {
-    padding: 0px 40px 0px 0px;
-}
-
 /*  ------------------------>  contact.html  <------------------------ */
 .grid-contact{
     width: 100vw;
