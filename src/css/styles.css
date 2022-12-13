@@ -280,6 +280,19 @@ label.technology:hover {
   cursor: pointer;
 }
 
+input.formulario-btn {
+  height: 49px;
+  background: #FF9494;
+  border: 1px solid #EAE6FE;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+input.formulario-btn:hover {
+  background-color: #3A7091;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
 img.logo-brand {
   max-height: 4rem;
   max-width: 4rem;
@@ -377,6 +390,31 @@ section div article div.card-img-custom {
   width: 100%;
   height: 200px;
   background-size: cover;
+}
+section div.contact-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+form div input {
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+}
+form div select {
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: none;
+  color: #232E35;
+}
+form div textarea {
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
 }
 
 footer div a i {
@@ -489,6 +527,25 @@ body main section div article div iframe.spotify {
   body main section div article div iframe.spotify {
     width: 50%;
   }
+}
+
+body main section div h2 {
+  color: #25282B;
+}
+body main section div form div label {
+  color: #232E35;
+}
+body main section div form div input, body main section div form div textarea {
+  color: #656D72;
+}
+body main section div form div input.formulario-btn, body main section div form div textarea.formulario-btn {
+  color: #FFFFFF;
+}
+body main section div div label {
+  color: #232E35;
+}
+body main section div div span {
+  color: #656D72;
 }
 
 /*# sourceMappingURL=styles.css.map */

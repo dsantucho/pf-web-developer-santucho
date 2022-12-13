@@ -1,0 +1,33 @@
+body{
+    main{
+        section{
+            div{
+                h2{
+                    color: $color-font-primary;
+                }
+                form{
+                    div{
+                        label{
+                            color:$color-font-text;
+                        }
+                        input, textarea{
+                            color:$color-font-secondary;
+                            &.formulario-btn{
+                                color: $color-white
+                            }
+                        }
+                    }
+                }
+                div{
+                    label{
+                        color:$color-font-text;
+                    }
+                    span{
+                        color: $color-font-secondary;
+                    }
+                }
+            }
+
+        }
+    }
+}

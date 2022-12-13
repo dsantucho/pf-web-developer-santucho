@@ -64,17 +64,18 @@ label{
         }
     }
 }
-    // .navbar-toggler{
-    //     height: fit-content
-    // }
-// .icons-style {
-//     font-size: 2rem;
-// }
-
-// .icon-style-big {
-//     width : 56px;
-//     height: 56px;
-// }
-
-//botones en navbar 
+input{
+    &.formulario-btn {
+        height       : 49px;
+        background   : $color-pink;
+        border       : 1px solid #EAE6FE;
+        border-radius: 8px;
+        transition: all 0.25s ease;
+        &:hover{
+            background-color:$color-blue;
+            color: $color-white;
+            cursor:pointer;
+        }
+    }
+}
 
