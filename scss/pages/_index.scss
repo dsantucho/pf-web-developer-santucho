@@ -1,0 +1,59 @@
+body{
+    background : $color-background-primary;
+
+    header{
+        a{
+            color: $color-font-primary;
+        }
+    }
+
+    main{
+        section{
+            &.bk-color-secondary{
+                background-color: $color-background-secondary;
+            }
+            &.bk-color-banner{
+                background:$color-pink ;
+                opacity        : 0.2;
+            }
+            div{
+                label{
+                    &.label-subtitle{
+                        color: $color-font-secondary; //color del font
+                    }
+                }
+            }
+            span{
+                &.wd-text{
+                color:$color-pink;
+            }  
+            }
+            p{
+                color: $color-font-secondary;
+            }
+            article{
+                div{
+                    &.div-testimonials{
+                        overflow: auto;
+                    }
+                    &.progress{
+                        background-color:$color-background-icons;
+                    }
+                    div{
+                        &.progress-bar{
+                            background-color: $color-blue;
+                        }
+                    }
+                }
+                h3{
+                    color:$color-font-primary;
+                }
+                h4{
+                    color:$color-font-secondary; 
+                }
+            }
+
+
+        }
+    }
+}

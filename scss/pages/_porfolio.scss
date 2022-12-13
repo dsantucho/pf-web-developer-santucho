@@ -1,0 +1,46 @@
+body{
+    background : $color-background-primary;
+
+    header{
+        a{
+            color: $color-font-primary;
+        }
+    }
+
+    main{
+        section{
+            div{
+                label{
+                    &.label-subtitle{
+                        color: $color-font-secondary; //color del font
+                    }
+                }
+                article{
+                    p{
+                        color: $color-font-secondary;
+                    }
+                    h3{
+                        color:$color-font-primary;
+                    }
+                    div{
+                        &.card{
+                            div{
+                                &.card-img-custom.ejemplo-1{
+                                    background-image: url('../image/porfolio/porfolio-ejemplo-1.png');
+                                }
+                                &.card-img-custom.ejemplo-2{
+                                    background-image: url('../image/porfolio/porfolio-ejemplo-2.png');
+                                }
+                                &.card-img-custom.ejemplo-3{
+                                    background-image: url('../image/porfolio/porfolio-ejemplo-3.png');
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}

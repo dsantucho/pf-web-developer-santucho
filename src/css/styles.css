@@ -1,750 +1,551 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
-
-/*  ------------------------>  RESETEO  <------------------------ */
-
-*{
-    margin   : 0;
-    padding  : 0;
-    box-sizing: border-box;
-}
-html{
-    font-size: 62.5%;
-}
-body{
-    /* equivale a 10px */
-    background : #F9FAFF;
-}
-ul,li{
-    list-style-type:none;
+.custom-my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-/*  ------------------------>  REUTILIZABLES  <------------------------ */
-.clipped {
-    /* Para esconder mis h1 lo googlee */
-    clip             : rect(0 0 0 0);
-    border           : 0;
-    -webkit-clip-path: inset(50%);
-    clip-path        : inset(50%);
-    display          : block;
-    margin           : 0 -1px -1px 0;
-    overflow         : hidden;
-    padding          : 0;
-    position         : absolute;
-    z-index          : -1;
+.custom-my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.icons-style {
-    font-size: 2rem;
+.custom-my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.icons-style:hover>a.gh{
-    color: #000000;
-    cursor: pointer;
+.custom-my-4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
-.icons-style:hover>a.lk{
-    color: #0a66c2;
-    cursor: pointer;
+.custom-my-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
-
-.icon-style-big {
-    width : 56px;
-    height: 56px;
+.custom-my-6 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
-.icon-logo{
-    max-height: 70px;
-    max-width     : 70px;
+h1, h2, h3, h4, h5, h6, a, label {
+  font-family: "Raleway";
+  font-style: normal;
 }
-
-.logo-brands{
-    max-height: 75px;
-    max-width     : 75px;
-
+h1.titles, h2.titles, h3.titles, h4.titles, h5.titles, h6.titles, a.titles, label.titles {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 100%;
+  color: #25282B;
 }
-
-.w-100{
-    width: 100%;
+@media (min-width: 480px) {
+  h1.titles, h2.titles, h3.titles, h4.titles, h5.titles, h6.titles, a.titles, label.titles {
+    font-size: 4rem;
+  }
 }
-/* ------------------------> LETRAS USO GENERAL  <------------------------ */
-
-.relaway-espaciado {
-    /* relaway-espaciado */
-    font-family   : 'Raleway';
-    font-style    : normal;
-    font-weight   : 500;
-    font-size     : 1.1rem; /*size para iphone */
-    line-height   : 28px;
-    letter-spacing: 7.5px;
-    text-transform: uppercase;
-    /*color       : #656D72; Cinder Light  TODO: PENSAR EN DEF EN EL ELEMENTO*/
+@media (min-width: 1201px) {
+  h1.titles, h2.titles, h3.titles, h4.titles, h5.titles, h6.titles, a.titles, label.titles {
+    font-size: 4.5rem;
+  }
 }
-
-.font-web-dev {
-    /* WEB DEV FONT*/
-    font-family   : 'Raleway';
-    font-style    : normal;
-    font-weight   : 500;
-    font-size     : 1.8rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+@media (min-width: 1401px) {
+  h1.titles, h2.titles, h3.titles, h4.titles, h5.titles, h6.titles, a.titles, label.titles {
+    font-size: 6rem;
+  }
 }
-
-h1 {
-    /* my-h1 */
-    font-family: 'Plus Jakarta Sans';
-    /* tipo de letra */
-    font-style : normal;
-    /* si es normal o italic */
-    font-weight: 700;
-    /* si es normal o bold */
-    font-size  : 3.2rem;
-    /* el tamano en nro o porcentaje */
-    line-height: 100%;
-    color      : #000000;
+h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle, h6.subtitle, a.subtitle, label.subtitle {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 45px;
 }
-
-h2 {
-    /* my-h2 */
-    font-family: 'Plus Jakarta Sans';
-    font-style : normal;
-    font-weight: 700;
-    font-size  : 3rem;
-    line-height: 45px;
-    margin     : 0px;
+@media (min-width: 480px) {
+  h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle, h6.subtitle, a.subtitle, label.subtitle {
+    font-size: 3.5rem;
+  }
 }
-
-h3 {
-
-    font-family: 'Plus Jakarta Sans';
-    font-style : normal;
-    font-weight: 500;
-    font-size  : 2rem;
-    line-height: 25px;
+h1.label-subtitle, h2.label-subtitle, h3.label-subtitle, h4.label-subtitle, h5.label-subtitle, h6.label-subtitle, a.label-subtitle, label.label-subtitle {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 28px;
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
 }
-
-h4 {
-    /* my-h4 */
-    font-family: 'Plus Jakarta Sans';
-    font-style : normal;
-    font-weight: 500;
-    font-size  : 2rem;
-    line-height: 25px;
-    color      : #656D72;
-    /* Cinder Light */
+@media (min-width: 480px) {
+  h1.label-subtitle, h2.label-subtitle, h3.label-subtitle, h4.label-subtitle, h5.label-subtitle, h6.label-subtitle, a.label-subtitle, label.label-subtitle {
+    font-size: 1.5rem;
+  }
 }
-
-.relaway-body,
-p {
-    font-family: 'Raleway';
-    font-style : normal;
-    font-weight: 500;
-    font-size  : 1.8rem;
-    line-height: 25px;
-
+h1.espaciado, h2.espaciado, h3.espaciado, h4.espaciado, h5.espaciado, h6.espaciado, a.espaciado, label.espaciado {
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
+  line-height: 28px;
+  font-size: 1.1rem;
 }
-
-.relaway-p{
-    font-family: 'Raleway';
-    font-style : normal;
-    font-weight: 500;
-    font-size  : 1.5rem;
-    line-height: 25px;
-}
-
-.font-inter-normal {
-    /* EX fontInterNormal*/
-    font-family: 'Inter';
-    font-style : normal;
-    font-size  : 1rem;
-}
-
-.font-plus-j-light {
-    /* EX plusJlightBody*/
-    font-family: 'Plus Jakarta Sans';
-    font-style : normal;
-    font-weight: 300;
-    font-size  : 1.8rem;
-    line-height: 23px;
-}
-
-.font-copyrights {
-    font-family: 'Inter';
-    font-style : normal;
-    font-weight: 400;
-    font-size  : 14px;
-    line-height: 17px;
-    text-align : center;
-
-}
-
-.font-plus-j-normal {
-    font-family: 'Plus Jakarta Sans';
-    font-style : normal;
-    font-weight: 500;
-    font-size  : 2rem;
-    line-height: 25px;
-}
-
-.p-card-porfolio{
-    font-family: 'Raleway';
-    font-style : normal;
-    font-size  : 1.2rem;
-    line-height: 25px;
-}
-.h3-card-porfolio{
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
+@media (min-width: 480px) {
+  h1.espaciado, h2.espaciado, h3.espaciado, h4.espaciado, h5.espaciado, h6.espaciado, a.espaciado, label.espaciado {
     font-size: 1.6rem;
-    line-height: 25px;
+  }
+}
+h1.raleway-body, h2.raleway-body, h3.raleway-body, h4.raleway-body, h5.raleway-body, h6.raleway-body, a.raleway-body, label.raleway-body {
+  font-size: 1.2rem;
+}
+@media (min-width: 480px) {
+  h1.raleway-body, h2.raleway-body, h3.raleway-body, h4.raleway-body, h5.raleway-body, h6.raleway-body, a.raleway-body, label.raleway-body {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1201px) {
+  h1.raleway-body, h2.raleway-body, h3.raleway-body, h4.raleway-body, h5.raleway-body, h6.raleway-body, a.raleway-body, label.raleway-body {
+    font-size: 1.6rem;
+  }
+}
+h1.font-job-title, h2.font-job-title, h3.font-job-title, h4.font-job-title, h5.font-job-title, h6.font-job-title, a.font-job-title, label.font-job-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 1.1rem;
+}
+@media (min-width: 480px) {
+  h1.font-job-title, h2.font-job-title, h3.font-job-title, h4.font-job-title, h5.font-job-title, h6.font-job-title, a.font-job-title, label.font-job-title {
+    font-size: 1.2rem;
+  }
+}
+h1.clipped, h2.clipped, h3.clipped, h4.clipped, h5.clipped, h6.clipped, a.clipped, label.clipped {
+  /* Para esconder mis h1 lo googlee */
+  clip: rect(0 0 0 0);
+  border: 0;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  display: block;
+  margin: 0 -1px -1px 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  z-index: -1;
 }
 
-
-/*  ------------------------>  2 SERVICE  <------------------------ */
-
-
-/* HASTA */
-/*  ------------------------>  HEADER NAV  <------------------------ */
-
-header{
-    background   : #F9FAFF;
-    border-bottom: solid 1px #9A9FA8;
-    transition   : all 0.5s ease;
-    z-index      : 10;
-    color: #25282B;
-
+nav.font-nav a {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 25px;
 }
 
-.header-nav {
-    --bs-nav-link-padding-x: 0;
-    --bs-nav-link-padding-y: 0;
+span, p, textarea {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-size: 1.2rem;
+}
+@media (min-width: 480px) {
+  span, p, textarea {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1201px) {
+  span, p, textarea {
+    font-size: 1.6rem;
+  }
+}
+span.text-center, p.text-center, textarea.text-center {
+  text-align: center;
+}
+span.light, p.light, textarea.light {
+  font-weight: 300;
+}
+span.copyright, p.copyright, textarea.copyright {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 17px;
+}
+span.font-web-dev, p.font-web-dev, textarea.font-web-dev {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+@media (min-width: 480px) {
+  span.font-web-dev, p.font-web-dev, textarea.font-web-dev {
+    font-size: 1.5rem;
+  }
+}
+span.testimonial-text, p.testimonial-text, textarea.testimonial-text {
+  line-height: 24px;
+  color: #232E35;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #25282B;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: solid 1px #9A9FA8;
+  transition: all 0.5s ease;
+  z-index: 10;
+  color: #25282B;
+}
 header:hover {
-    box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 992px) {
+  header div.navbar-toggle-container {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  header nav {
+    flex-grow: 0 !important;
+  }
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #656D72;
+}
+header nav ul li.nav-link.active {
+  color: #25282B;
 }
 
-.navbar-toggler{
-    height: fit-content
+li.icons-style:hover a.gh {
+  color: #000000;
+  cursor: pointer;
+}
+li.icons-style:hover a.lk {
+  color: #0a66c2;
+  cursor: pointer;
 }
 
-/*  ------------------------>    <------------------------ */
-
-/*  ------------------------>  SECTION 1 HEADER MAIN  <------------------------ */
-
-.btn-primary{
-    background: #FF9494;
-    color     : #25282B;
-    border    : 2px solid #FF9494;
-    transition: all 0.25s ease; /* easing function */
+a.button-custom {
+  padding: 8px 24px;
+  width: 120px;
+}
+a.button-custom.btn-primary {
+  background: #FF9494;
+  color: #25282B;
+  border: 2px solid #FF9494;
+  transition: all 0.25s ease; /* easing function */
+}
+a.button-custom.btn-primary:hover {
+  background: #3A7091;
+  color: #FFFFFF;
+  border: 2px solid #3A7091;
+}
+a.button-custom.btn-secondary {
+  background: #FFFFFF;
+  color: #25282B;
+  border: 2px solid #25282B;
+  transition: all 0.25s ease; /* easing function */
+}
+a.button-custom.btn-secondary:hover {
+  background: #25282B;
+  color: #FFFFFF;
 }
 
-.btn-primary:hover{
-    background: #3a7091;
-    color     : #FFFFFF;
-    border    : 2px solid #3a7091;
+label.technology {
+  padding: 4px 8px;
+  border: 1px solid #9A9FA8;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+label.technology:hover {
+  background-color: #3A7091;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
-.btn-secondary{
-    background: #FFFFFF;
-    color     : #25282B;
-    border    : 2px solid #25282B;
-    transition: all 0.25s ease; /* easing function */
+input.formulario-btn {
+  height: 49px;
+  background: #FF9494;
+  border: 1px solid #EAE6FE;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+input.formulario-btn:hover {
+  background-color: #3A7091;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
-.btn-secondary:hover{
-    background: #25282B;
+img.logo-brand {
+  max-height: 4rem;
+  max-width: 4rem;
+}
+@media (min-width: 480px) {
+  img.logo-brand {
+    max-height: 6rem;
+    max-width: 6rem;
+  }
+}
+@media (min-width: 1201px) {
+  img.logo-brand {
+    max-height: 8rem;
+    max-width: 8rem;
+  }
+}
+img.icon-logo {
+  max-height: 6rem;
+  max-width: 6rem;
 }
 
-.button-custom {
-    padding        : 8px 24px;
-    width          : 120px;
-    height         : 45px;
+li.icons-style {
+  font-size: 2rem;
 }
 
-.content-header p {
-    /* Auto layout */
-    display       : flex;
-    flex-direction: column;
-    align-items   : flex-start;
-    padding       : 5px;
-    /*deff color font */
-    color: #828282;
+article div.icon-services {
+  padding: 16px;
+  height: 56px;
+  width: 56px;
+  background: rgba(255, 148, 148, 0.2);
+  border-radius: 10px;
+}
+article div.icon-services i {
+  font-size: 2rem;
+  color: #FF9494;
+  padding: 0px;
 }
 
-.wd-text { /* Luego se le aplicara animacion */
-    /* WEB DEV FONT DEFF COLOR*/
-    color     : #FF9494;
+section article.cards-icon {
+  background: #FFFFFF;
+  gap: 10px;
+  overflow: auto;
+  max-width: 450px;
+  max-height: 400px;
 }
-
-.fit-content{
-    width:fit-content;
+@media (min-width: 576px) {
+  section article.cards-icon {
+    max-width: 550px;
+  }
 }
-
-/*  ------------------------>  1 SECTION SERVICE  <------------------------ */
-
-.my-services {
-    background-color: #FBFBFB;
-    color           : #656D72;
+@media (min-width: 1401px) {
+  section article.cards-icon {
+    max-width: 650px;
+  }
 }
-
-.my-services article {
-    background     : #FFFFFF;
-    gap: 10px;
-    overflow       : auto;
+section article.card-testimonials {
+  max-width: calc(100vw - 24px);
+  max-height: 310px;
+  min-height: 310px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 50px 25px 15px 25px;
+  margin-top: 80px;
+}
+@media (min-width: 576px) {
+  section article.card-testimonials {
     max-width: 450px;
-    max-height: 400px;
+  }
+}
+@media (min-width: 1401px) {
+  section article.card-testimonials {
+    max-width: 550px;
+  }
+}
+section article.card-testimonials span {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -48px;
+  left: calc(50% - 48px);
+}
+section article.card-testimonials div a {
+  text-decoration: none;
+  color: #232E35;
+}
+section article.card-testimonials div label.job-title {
+  padding: 4px 8px;
+  background-color: rgba(58, 112, 145, 0.5019607843);
+  border-radius: 4px;
+  color: #F9FAFF;
+  width: fit-content;
+}
+section div { /* es en profolio */ }
+section div article div.card-img-custom {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+}
+section div.contact-card {
+  background: #FFFFFF;
+  border-radius: 8px;
 }
 
-.icon-services {
-    padding        : 16px;
-    height: 56px;
-    width: 56px;
-    /* light pink */
-    background     : rgba(255, 148, 148, 0.2);
-    border-radius  : 10px;
+form div input {
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+}
+form div select {
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: none;
+  color: #232E35;
+}
+form div textarea {
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
 }
 
-.icon-services i{
-        /* standar size de iconos*/
-        font-size: 2.5rem;
-        color: #FF9494;
-        padding: 0px;
+footer div a i {
+  font-size: 2rem;
+  color: #656D72;
+}
+footer span {
+  color: #656D72;
 }
 
-.my-services article p {
-    font-size      : 1.6rem;
-    line-height    : 24px;
-    color          : #232E35;
+body {
+  background: #F9FAFF;
+}
+body header a {
+  color: #25282B;
+}
+body main section.bk-color-secondary {
+  background-color: #FBFBFB;
+}
+body main section.bk-color-banner {
+  background: #FF9494;
+  opacity: 0.2;
+}
+body main section div label.label-subtitle {
+  color: #656D72;
+}
+body main section span.wd-text {
+  color: #FF9494;
+}
+body main section p {
+  color: #656D72;
+}
+body main section article div.div-testimonials {
+  overflow: auto;
+}
+body main section article div.progress {
+  background-color: rgba(255, 148, 148, 0.2);
+}
+body main section article div div.progress-bar {
+  background-color: #3A7091;
+}
+body main section article h3 {
+  color: #25282B;
+}
+body main section article h4 {
+  color: #656D72;
 }
 
-.my-services article h3 {
-    color: #232E35;
+body {
+  background: #F9FAFF;
+}
+body header a {
+  color: #25282B;
+}
+body main section div label.label-subtitle {
+  color: #656D72;
+}
+body main section div article p {
+  color: #656D72;
+}
+body main section div article h3 {
+  color: #25282B;
 }
 
-/*  ------------------------>  3 SECTION TECH  <------------------------ */
-
-#my-tech {
-    background     : #FF9494;
-    opacity        : 0.2;
+body {
+  background: #F9FAFF;
+}
+body header a {
+  color: #25282B;
+}
+body main section div label.label-subtitle {
+  color: #656D72;
+}
+body main section div article p {
+  color: #656D72;
+}
+body main section div article h3 {
+  color: #25282B;
+}
+body main section div article div.card div.card-img-custom.ejemplo-1 {
+  background-image: url("../image/porfolio/porfolio-ejemplo-1.png");
+}
+body main section div article div.card div.card-img-custom.ejemplo-2 {
+  background-image: url("../image/porfolio/porfolio-ejemplo-2.png");
+}
+body main section div article div.card div.card-img-custom.ejemplo-3 {
+  background-image: url("../image/porfolio/porfolio-ejemplo-3.png");
 }
 
-/*  ------------------------>  SECTION COMPNIES LOGOS  <------------------------ */
-
-#my-companies {
-    /* pink */
-    background     : #FF9494;
-    opacity        : 0.2;
+body main section div article div h2 {
+  color: #232E35;
 }
-
-/*  ------------------------>  4 SECTION TESTIMONIALS  <------------------------ */
-#my-clients {
-  /* color font para relaway-espaciado*/
-    color          : #656D72;
+body main section div article div p {
+  color: #656D72;
 }
-
-.article-testimonials {
-    max-width: calc(100vw - 24px);
-    max-height: 310px;
-    min-height: 310px;
-
-    /* White */
-    background     : #FFFFFF;
-    border-radius  : 8px;
-    padding        : 50px 25px 15px 25px;
-    margin-top: 80px;
+body main section div article div iframe.spotify {
+  width: 100%;
 }
-
-.article-testimonials>span {
-    display        : flex;
-    justify-content: center;
-    position       : absolute;
-    top            : -48px;
-    left           : calc(50% - 48px);
-    /* el 50% va a ser del eje x [left] calculo el medio y -48 es la mitad de la foto */
-}
-
-.testimonial-text{
-
-    line-height    : 24px;
-    color          : #232E35;
-    /* Cinder 232E35 */
-    overflow       : auto;  
-}
-
-.job-title {
-    padding        : 4px 8px;
-    background-color:#3a709180;
-    border-radius  : 4px;
-    color: #F9FAFF;
-    /* color: #656D72; */
-    width:fit-content;
-
-}
-
-.testimonials-name {
-    color: #232E35;
-    /* Cinder */
-}
-/*  ------------------------>  5 SECTION SKILLS  <------------------------ */
-#my-skills {
-    background-color: #FBFBFB;
-    color         : #656D72;
-    /* color font para relaway-espaciado*/
-}
-
-.bar-container {
-    background-color: rgba(255, 148, 148, 0.2);
-}
-
-.progress-container {
-    background-color: #3A7091;
-}
-/* Formar barra de progreso */
-
-/*  ------------------------>  SECTION SKILLS  <------------------------ */
-
-/*  ------------------------>  FOOTER  <------------------------ */
-
-.footer-icons i{
-    font-size: 3rem;
-    color: #656D72;
-}
-.footer-copy {
-    color          : #656D72;
-}
-/*  ------------------------>  FOOTER  <------------------------ */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  ------------------------>  TODO  <------------------------ */
-/*  ------------------------>  carrera.html  <------------------------ */
-/* **** MOBILE FIRST **** */
-
-.work-article {
-
-    color         : #232E35;
-}
-
-.work-article div p {
-    color: #656D72;
-    /* Cinder Light */
-}
-/* **** MOBILE FIRST **** */
-
-/*  ------------------------>  porfolio.html  <------------------------ */
-
-.my-porfolio-color {
-    color          : #656D72;
-}
-
-.h3-color-porfolio {
-    color       : #232E35;
-}
-
-.technology {
-    padding      : 4px 8px;
-    border       : 1px solid #F1F1F1;
-    border-radius: 4px;
-    /* margin-right : 20px; */
-    transition: all 0.25s ease; 
-}
-
-.technology:hover{
-    background-color: #3a7091;
-    color: #FFFFFF;
-    cursor:pointer;
-}
-
-.card-img-custom{
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-}
-
-.card-img-custom.ejemplo-1{
-    background-image: url('../image/porfolio/porfolio-ejemplo-1.png');
-}
-
-.card-img-custom.ejemplo-2{
-    background-image: url('../image/porfolio/porfolio-ejemplo-2.png');
-}
-
-.card-img-custom.ejemplo-3{
-    background-image: url('../image/porfolio/porfolio-ejemplo-3.png');
-}
-
-/*  ------------------------>  about-me.html  <------------------------ */
-.about-me {
-    display        : flex;
-    flex-direction : column;
-    justify-content: flex-start;
-    align-items    : flex-start;
-    width          : 100%;
-}
-
-.about-me>* {
-    margin-left  : 100px;
-    margin-top   : 20px;
-    margin-bottom: 40px;
-    margin-right : 100px;
-}
-
-.about-me p,
-.about-me h2 {
-    /* Cinder */
-    color: #232E35;
-}
-
-.art-img {
-    display       : flex;
-    flex-direction: row;
-}
-
-.art-img div {
+@media (min-width: 576px) {
+  body main section div article div iframe.spotify {
     width: 50%;
+  }
+}
+@media (min-width: 1201px) {
+  body main section div article div iframe.spotify {
+    width: 100%;
+  }
+}
+@media (min-width: 1401px) {
+  body main section div article div iframe.spotify {
+    width: 50%;
+  }
 }
 
-.about-me-text {
-    display        : flex;
-    flex-direction : column;
-    justify-content: flex-start;
-    align-items    : flex-start;
+body main section div h2 {
+  color: #25282B;
+}
+body main section div form div label {
+  color: #232E35;
+}
+body main section div form div input, body main section div form div textarea {
+  color: #656D72;
+}
+body main section div form div input.formulario-btn, body main section div form div textarea.formulario-btn {
+  color: #FFFFFF;
+}
+body main section div div label {
+  color: #232E35;
+}
+body main section div div span {
+  color: #656D72;
 }
 
-.about-me-img {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-}
-
-.art-video {
-    display       : flex;
-    flex-direction: row;
-}
-
-.art-video div {
-    padding: 0px 40px 0px 0px;
-}
-
-/*  ------------------------>  contact.html  <------------------------ */
-.grid-contact{
-    width: 100vw;
-height: 100vh;
-    display: grid;
-    grid-template: 1fr 2fr 1fr / 1fr;
-    /* grid-template-rows: 15% 60% 25%;
-    grid-template-columns: 1fr; */
-    border: 3px solid black;
-    grid-template-areas: 
-    "navbar"
-    "contact"
-    "footer";
-}
-
-.header-contact{
-    grid-area: navbar;
-}
-.main-contact{
-    grid-area: contact;
-}
-.footer-contact{
-    background-color: red;
-}
-
-
-.my-contact {
-    display        : flex;
-    flex-direction : column;
-    justify-content: flex-start;
-    align-items    : flex-start;
-    width          : 100%;
-}
-
-.my-contact>* {
-    margin-left  : 100px;
-    margin-top   : 20px;
-    margin-bottom: 10px;
-    margin-right : 100px;
-}
-
-.content-contact {
-    display        : flex;
-    flex-direction : row;
-    width          : 90%;
-    justify-content: space-between;
-}
-
-.div-form,
-.datos-contact {
-    width  : 50%;
-    padding: 10px;
-}
-
-.formulario div {
-    display       : flex;
-    flex-direction: column;
-}
-
-.formulario div>* {
-    margin: 8px;
-}
-
-.formulario div label {
-    color: #232E35;
-}
-
-.input-form {
-    height       : 48px;
-    background   : #FFFFFF;
-    border-radius: 8px;
-    border       : none;
-    padding      : 10px;
-}
-
-.contact-options {
-    height       : 48px;
-    background   : #FFFFFF;
-    border-radius: 8px;
-    border       : none;
-    color        : #232E35;
-}
-
-.text-area {
-    background   : #FFFFFF;
-    border-radius: 8px;
-    border       : none;
-    padding      : 10px;
-}
-
-.formulario-btn {
-    height       : 49px;
-    background   : #FF9494;
-    border       : 1px solid #EAE6FE;
-    border-radius: 8px;
-}
-
-.datos-contact {
-    display        : flex;
-    flex-direction : column;
-    justify-content: flex-start;
-    margin-left    : 100px;
-    margin-top     : 8px;
-}
-
-.div-card-info {
-    margin-bottom : 50px;
-    display       : flex;
-    flex-direction: row;
-}
-
-.div-contact-info {
-    display       : flex;
-    flex-direction: column;
-    margin-left   : 25px;
-}
-
-.datos-contact div label {
-    /* Cinder */
-    color: #232E35;
-}
-
-.datos-contact div span {
-    color: #656D72;
-}
-
-
-/* ------------------ 480 breakpoint ------------ */
-/* xs: 0,
-sm: 576px, mobile
-md: 768px, mobile
-lg: 992px, cambia menu - cambio web
-xl: 1200px,
-xxl: 1400px */
-
-@media only screen and (min-width: 480px) {
-    .navbar-brand.relaway-espaciado{
-        font-size: 1.8rem;/* solo el navbar*/
-    }
-
-    .relaway-espaciado{
-        font-size: 1.4rem;
-    }
-
-    .relaway-p{
-        font-size: 1.8rem;
-    }
-
-
-}
-
-/* ------ table portrait -------*/ 
-@media only screen and (min-width: 576px) {
-    .article-testimonials{
-        max-width: 450px; 
-    }
-    
-}
-@media only screen and (min-width: 992px) {
-    .relaway-body, p {
-        font-size: 1.4rem;
-    }
-
-    div.navbar-toggle-container{
-        display: none !important;
-    }
-
-    nav{
-        flex-grow: 0;
-    }
-
-    /* esto es lo que hace image fluid*/
-    .img-custom{
-        max-width: 100%;
-        width: auto;
-        height: auto;
-    }
-}
-
-@media only screen and (min-width:1201px){
-
-    h1{
-        font-size: 4rem;
-    }
-    .relaway-body, p {
-        font-size: 1.8rem;
-    }
-}
-
-@media only screen and (min-width:1401px){
-
-    h1{
-        font-size: 6rem;
-    }
-    .relaway-body, p {
-        font-size: 2rem;
-    }
-
-    .p-card-porfolio{
-        font-size  : 1.6rem;
-    }
-
-    .h3-card-porfolio{
-        font-size: 2rem;
-    }
-}
+/*# sourceMappingURL=styles.css.map */

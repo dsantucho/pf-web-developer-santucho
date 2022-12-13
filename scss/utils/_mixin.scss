@@ -1,0 +1,52 @@
+@for $i from 1 through 6 {
+    .custom-my-#{$i}{
+        margin-top: #{$i}rem;
+        margin-bottom: #{$i}rem;
+    }
+}
+
+@mixin mobile-lg() {
+    @media (min-width:480px){
+        @content;
+    }  
+}
+
+@mixin tablet-sm() {
+    @media (min-width:576px){
+        @content;
+    }  
+}
+
+@mixin tablet-lg() {
+    @media (min-width: 992px){
+        @content;
+    }  
+}
+@mixin web-sm() {
+    @media (min-width:1201px){
+        @content;
+    }  
+}
+@mixin web-lg() {
+    @media (min-width:1401px){
+        @content;
+    }  
+}
+
+// @mixin text($size) {
+//     font-size: $size;
+//     font-weight: 400;
+//     line-height: 24px;
+// }
+
+// .text-small{
+//     @include text(small);
+// }
+
+// .text-medium{
+//     @include text(medium);
+// }
+
+// .text-large{
+//     @include text(large);
+// }

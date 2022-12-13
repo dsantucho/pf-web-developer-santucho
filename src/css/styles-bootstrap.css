@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+/*  ------------------------>  RESETEO  <------------------------ */
+
+*{
+    margin   : 0;
+    padding  : 0;
+    box-sizing: border-box;
+} /* PASADO */
+
+/* PASADO */html{
+    font-size: 62.5%;
+}/* PASADO */
+
+/* PASADO */body{
+    /* equivale a 10px */
+    background : #F9FAFF;
+}
+/* PASADO */ul,li{
+    list-style-type:none;
+}
+
+/*  ------------------------>  REUTILIZABLES  <------------------------ */
+.clipped {
+    /* Para esconder mis h1 lo googlee */
+    clip             : rect(0 0 0 0);
+    border           : 0;
+    -webkit-clip-path: inset(50%);
+    clip-path        : inset(50%);
+    display          : block;
+    margin           : 0 -1px -1px 0;
+    overflow         : hidden;
+    padding          : 0;
+    position         : absolute;
+    z-index          : -1;
+}
+
+.icons-style {
+    font-size: 2rem;
+}
+
+.icons-style:hover>a.gh{
+    color: #000000;
+    cursor: pointer;
+}
+
+.icons-style:hover>a.lk{
+    color: #0a66c2;
+    cursor: pointer;
+}
+
+
+.icon-style-big {
+    width : 56px;
+    height: 56px;
+}
+
+/* PASADO */.icon-logo{
+    max-height: 70px;
+    max-width     : 70px;
+}
+
+.logo-brands{
+    max-height: 75px;
+    max-width     : 75px;
+
+}
+
+.w-100{
+    width: 100%;
+}
+/* ------------------------> LETRAS USO GENERAL  <------------------------ */
+
+/*PASADO */.relaway-espaciado {
+    /* relaway-espaciado */
+    font-family   : 'Raleway';
+    font-style    : normal;
+    font-weight   : 500;
+    font-size     : 1.1rem; /*size para iphone */
+    line-height   : 28px;
+    letter-spacing: 7.5px;
+    text-transform: uppercase;
+    /*color       : #656D72; Cinder Light  TODO: PENSAR EN DEF EN EL ELEMENTO*/
+}
+
+/*PASADO*/.font-web-dev {
+    /* WEB DEV FONT*/
+    font-family   : 'Raleway';
+    font-style    : normal;
+    font-weight   : 500;
+    font-size     : 1.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*PASADO*/h1 {
+    /* my-h1 */
+    font-family: 'Plus Jakarta Sans';
+    /* tipo de letra */
+    font-style : normal;
+    /* si es normal o italic */
+    font-weight: 700;
+    /* si es normal o bold */
+    font-size  : 3.2rem;
+    /* el tamano en nro o porcentaje */
+    line-height: 100%;
+    color      : #000000;
+}
+
+/*PASADO*/h2 {
+    /* my-h2 */
+    font-family: 'Plus Jakarta Sans';
+    font-style : normal;
+    font-weight: 700;
+    font-size  : 3rem;
+    line-height: 45px;
+    margin     : 0px;
+}
+
+h3 {
+
+    font-family: 'Plus Jakarta Sans';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 2rem;
+    line-height: 25px;
+}
+
+h4 {
+    /* my-h4 */
+    font-family: 'Plus Jakarta Sans';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 2rem;
+    line-height: 25px;
+    color      : #656D72;
+    /* Cinder Light */
+}
+
+/*PASADO*/.relaway-body,
+p {
+    font-family: 'Raleway';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 1.8rem;
+    line-height: 25px;
+
+}
+
+.relaway-p{
+    font-family: 'Raleway';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 1.5rem;
+    line-height: 25px;
+}
+
+.font-inter-normal {
+    /* EX fontInterNormal*/
+    font-family: 'Inter';
+    font-style : normal;
+    font-size  : 1rem;
+}
+
+.font-plus-j-light {
+    /* EX plusJlightBody*/
+    font-family: 'Plus Jakarta Sans';
+    font-style : normal;
+    font-weight: 300;
+    font-size  : 1.8rem;
+    line-height: 23px;
+}
+
+.font-copyrights {
+    font-family: 'Inter';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 17px;
+    text-align : center;
+
+}
+
+.font-plus-j-normal {
+    font-family: 'Plus Jakarta Sans';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 2rem;
+    line-height: 25px;
+}
+
+.p-card-porfolio{
+    font-family: 'Raleway';
+    font-style : normal;
+    font-size  : 1.2rem;
+    line-height: 25px;
+}
+.h3-card-porfolio{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 25px;
+}
+
+
+/*  ------------------------>  2 SERVICE  <------------------------ */
+
+
+/* HASTA */
+/*  ------------------------>  HEADER NAV  <------------------------ */
+
+/*PASADO*/header{
+    background   : #F9FAFF;
+    border-bottom: solid 1px #9A9FA8;
+    transition   : all 0.5s ease;
+    z-index      : 10;
+    color: #25282B;
+
+}
+
+.header-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0;
+}
+
+header:hover {
+    box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler{
+    height: fit-content
+}
+
+/*  ------------------------>    <------------------------ */
+
+/*  ------------------------>  SECTION 1 HEADER MAIN  <------------------------ */
+
+.btn-primary{
+    background: #FF9494;
+    color     : #25282B;
+    border    : 2px solid #FF9494;
+    transition: all 0.25s ease; /* easing function */
+}
+
+.btn-primary:hover{
+    background: #3a7091;
+    color     : #FFFFFF;
+    border    : 2px solid #3a7091;
+}
+
+.btn-secondary{
+    background: #FFFFFF;
+    color     : #25282B;
+    border    : 2px solid #25282B;
+    transition: all 0.25s ease; /* easing function */
+}
+
+.btn-secondary:hover{
+    background: #25282B;
+}
+
+.button-custom {
+    padding        : 8px 24px;
+    width          : 120px;
+    height         : 45px;
+}
+
+.content-header p {
+    /* Auto layout */
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
+    padding       : 5px;
+    /*deff color font */
+    color: #828282;
+}
+
+/*PASADO*/.wd-text { /* Luego se le aplicara animacion */
+    /* WEB DEV FONT DEFF COLOR*/
+    color     : #FF9494;
+}
+
+.fit-content{
+    width:fit-content;
+}
+
+/*  ------------------------>  1 SECTION SERVICE  <------------------------ */
+
+.my-services {
+    background-color: #FBFBFB;
+    color           : #656D72;
+}
+
+.my-services article {
+    background     : #FFFFFF;
+    gap: 10px;
+    overflow       : auto;
+    max-width: 450px;
+    max-height: 400px;
+}
+
+.icon-services {
+    padding        : 16px;
+    height: 56px;
+    width: 56px;
+    /* light pink */
+    background     : rgba(255, 148, 148, 0.2);
+    border-radius  : 10px;
+}
+
+.icon-services i{
+        /* standar size de iconos*/
+        font-size: 2.5rem;
+        color: #FF9494;
+        padding: 0px;
+}
+
+.my-services article p {
+    font-size      : 1.6rem;
+    line-height    : 24px;
+    color          : #232E35;
+}
+
+.my-services article h3 {
+    color: #232E35;
+}
+
+/*  ------------------------>  3 SECTION TECH  <------------------------ */
+
+#my-tech {
+    background     : #FF9494;
+    opacity        : 0.2;
+}
+
+/*  ------------------------>  SECTION COMPNIES LOGOS  <------------------------ */
+
+#my-companies {
+    /* pink */
+    background     : #FF9494;
+    opacity        : 0.2;
+}
+
+/*  ------------------------>  4 SECTION TESTIMONIALS  <------------------------ */
+#my-clients {
+  /* color font para relaway-espaciado*/
+    color          : #656D72;
+}
+
+.article-testimonials {
+    max-width: calc(100vw - 24px);
+    max-height: 310px;
+    min-height: 310px;
+
+    /* White */
+    background     : #FFFFFF;
+    border-radius  : 8px;
+    padding        : 50px 25px 15px 25px;
+    margin-top: 80px;
+}
+
+.article-testimonials>span {
+    display        : flex;
+    justify-content: center;
+    position       : absolute;
+    top            : -48px;
+    left           : calc(50% - 48px);
+    /* el 50% va a ser del eje x [left] calculo el medio y -48 es la mitad de la foto */
+}
+
+.testimonial-text{
+
+    line-height    : 24px;
+    color          : #232E35;
+    /* Cinder 232E35 */
+    overflow       : auto;  
+}
+
+.job-title {
+    padding        : 4px 8px;
+    background-color:#3a709180;
+    border-radius  : 4px;
+    color: #F9FAFF;
+    /* color: #656D72; */
+    width:fit-content;
+
+}
+
+.testimonials-name {
+    color: #232E35;
+    /* Cinder */
+}
+/*  ------------------------>  5 SECTION SKILLS  <------------------------ */
+#my-skills {
+    background-color: #FBFBFB;
+    color         : #656D72;
+    /* color font para relaway-espaciado*/
+}
+
+.bar-container {
+    background-color: rgba(255, 148, 148, 0.2);
+}
+
+.progress-container {
+    background-color: #3A7091;
+}
+/* Formar barra de progreso */
+
+/*  ------------------------>  SECTION SKILLS  <------------------------ */
+
+/*  ------------------------>  FOOTER  <------------------------ */
+
+.footer-icons i{
+    font-size: 3rem;
+    color: #656D72;
+}
+.footer-copy {
+    color          : #656D72;
+}
+/*  ------------------------>  FOOTER  <------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ------------------------>  TODO  <------------------------ */
+/*  ------------------------>  carrera.html  <------------------------ */
+/* **** MOBILE FIRST **** */
+
+.work-article {
+
+    color         : #232E35;
+}
+
+.work-article div p {
+    color: #656D72;
+    /* Cinder Light */
+}
+/* **** MOBILE FIRST **** */
+
+/*  ------------------------>  porfolio.html  <------------------------ */
+
+.my-porfolio-color {
+    color          : #656D72;
+}
+
+.h3-color-porfolio {
+    color       : #232E35;
+}
+
+.technology {
+    padding      : 4px 8px;
+    border       : 1px solid #F1F1F1;
+    border-radius: 4px;
+    /* margin-right : 20px; */
+    transition: all 0.25s ease; 
+}
+
+.technology:hover{
+    background-color: #3a7091;
+    color: #FFFFFF;
+    cursor:pointer;
+}
+
+.card-img-custom{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+
+.card-img-custom.ejemplo-1{
+    background-image: url('../image/porfolio/porfolio-ejemplo-1.png');
+}
+
+.card-img-custom.ejemplo-2{
+    background-image: url('../image/porfolio/porfolio-ejemplo-2.png');
+}
+
+.card-img-custom.ejemplo-3{
+    background-image: url('../image/porfolio/porfolio-ejemplo-3.png');
+}
+
+/*  ------------------------>  about-me.html  <------------------------ */
+.about-me {
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+    align-items    : flex-start;
+    width          : 100%;
+}
+
+.about-me>* {
+    margin-left  : 100px;
+    margin-top   : 20px;
+    margin-bottom: 40px;
+    margin-right : 100px;
+}
+
+.about-me p,
+.about-me h2 {
+    /* Cinder */
+    color: #232E35;
+}
+
+.art-img {
+    display       : flex;
+    flex-direction: row;
+}
+
+.art-img div {
+    width: 50%;
+}
+
+.about-me-text {
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+    align-items    : flex-start;
+}
+
+.about-me-img {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.art-video {
+    display       : flex;
+    flex-direction: row;
+}
+
+.art-video div {
+    padding: 0px 40px 0px 0px;
+}
+
+/*  ------------------------>  contact.html  <------------------------ */
+.grid-contact{
+    width: 100vw;
+height: 100vh;
+    display: grid;
+    grid-template: 1fr 2fr 1fr / 1fr;
+    /* grid-template-rows: 15% 60% 25%;
+    grid-template-columns: 1fr; */
+    border: 3px solid black;
+    grid-template-areas: 
+    "navbar"
+    "contact"
+    "footer";
+}
+
+.header-contact{
+    grid-area: navbar;
+}
+.main-contact{
+    grid-area: contact;
+}
+.footer-contact{
+    background-color: red;
+}
+
+
+.my-contact {
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+    align-items    : flex-start;
+    width          : 100%;
+}
+
+.my-contact>* {
+    margin-left  : 100px;
+    margin-top   : 20px;
+    margin-bottom: 10px;
+    margin-right : 100px;
+}
+
+.content-contact {
+    display        : flex;
+    flex-direction : row;
+    width          : 90%;
+    justify-content: space-between;
+}
+
+.div-form,
+.datos-contact {
+    width  : 50%;
+    padding: 10px;
+}
+
+.formulario div {
+    display       : flex;
+    flex-direction: column;
+}
+
+.formulario div>* {
+    margin: 8px;
+}
+
+.formulario div label {
+    color: #232E35;
+}
+
+.input-form {
+    height       : 48px;
+    background   : #FFFFFF;
+    border-radius: 8px;
+    border       : none;
+    padding      : 10px;
+}
+
+.contact-options {
+    height       : 48px;
+    background   : #FFFFFF;
+    border-radius: 8px;
+    border       : none;
+    color        : #232E35;
+}
+
+.text-area {
+    background   : #FFFFFF;
+    border-radius: 8px;
+    border       : none;
+    padding      : 10px;
+}
+
+.formulario-btn {
+    height       : 49px;
+    background   : #FF9494;
+    border       : 1px solid #EAE6FE;
+    border-radius: 8px;
+}
+
+.datos-contact {
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+    margin-left    : 100px;
+    margin-top     : 8px;
+}
+
+.div-card-info {
+    margin-bottom : 50px;
+    display       : flex;
+    flex-direction: row;
+}
+
+.div-contact-info {
+    display       : flex;
+    flex-direction: column;
+    margin-left   : 25px;
+}
+
+.datos-contact div label {
+    /* Cinder */
+    color: #232E35;
+}
+
+.datos-contact div span {
+    color: #656D72;
+}
+
+
+/* ------------------ 480 breakpoint ------------ */
+/* xs: 0,
+sm: 576px, mobile
+md: 768px, mobile
+lg: 992px, cambia menu - cambio web
+xl: 1200px,
+xxl: 1400px */
+
+@media only screen and (min-width: 480px) {
+    .navbar-brand.relaway-espaciado{
+        font-size: 1.8rem;/* solo el navbar*/
+    }
+
+    .relaway-espaciado{
+        font-size: 1.4rem;
+    }
+
+    .relaway-p{
+        font-size: 1.8rem;
+    }
+
+
+}
+
+/* ------ table portrait -------*/ 
+@media only screen and (min-width: 576px) {
+    .article-testimonials{
+        max-width: 450px; 
+    }
+    
+}
+@media only screen and (min-width: 992px) {
+    .relaway-body, p {
+        font-size: 1.4rem;
+    }
+
+    div.navbar-toggle-container{
+        display: none !important;
+    }
+
+    nav{
+        flex-grow: 0;
+    }
+
+    /* esto es lo que hace image fluid*/
+    .img-custom{
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width:1201px){
+
+    h1{
+        font-size: 4rem;
+    }
+    .relaway-body, p {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (min-width:1401px){
+
+    h1{
+        font-size: 6rem;
+    }
+    .relaway-body, p {
+        font-size: 2rem;
+    }
+
+    .p-card-porfolio{
+        font-size  : 1.6rem;
+    }
+
+    .h3-card-porfolio{
+        font-size: 2rem;
+    }
+}

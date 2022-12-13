@@ -1,0 +1,29 @@
+form{
+    div{
+        label{
+
+        }
+        input{
+            height       : 48px;
+            background   :$color-white;
+            border-radius: 8px;
+            border       : none;
+            padding      : 10px;
+        }
+        select{
+            height       : 48px;
+            background   : $color-white;
+            border-radius: 8px;
+            border       : none;
+            color        : #232E35;
+        }
+
+        textarea{
+            background   : $color-white;
+            border-radius: 8px;
+            border       : none;
+            padding      : 10px;
+        }
+        
+    }
+}

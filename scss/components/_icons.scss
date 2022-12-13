@@ -1,0 +1,47 @@
+// iconos y su size - font - colors. 
+img{
+    &.logo-brand{
+        max-height: $icon-size-lg;
+        max-width     : $icon-size-lg;
+        @include mobile-lg(){ //480px
+            max-height: $icon-size-xl;
+            max-width     : $icon-size-xl;
+        }
+        @include web-sm(){ //480px
+            max-height: $icon-size-xxl;
+            max-width     : $icon-size-xxl;
+        }
+    }
+    &.icon-logo{
+        max-height: $icon-size-xl; //70px;
+        max-width:$icon-size-xl; //70px;
+    }
+}
+
+li{
+    &.icons-style{
+        font-size:$icon-size-sm;
+    }
+}
+
+article{
+    div{
+        &.icon-services{
+            padding: 16px;
+            height: 56px;
+            width: 56px;
+            background: $color-background-icons;
+            border-radius: 10px;
+            i{
+                font-size:$icon-size-sm;// 2.5rem;
+                color:$color-pink;
+                padding: 0px;
+            }
+        }
+    }
+}
+
+// .logo-brands{
+//     max-height: 75px;
+//     max-width     : 75px;
+// }

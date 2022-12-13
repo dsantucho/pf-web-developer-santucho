@@ -8,8 +8,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de Daniela Soledad Santucho. Descubri skills, educacion y clientes">
     <link rel="shortcut icon" href="./src/image/favicon.ico" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="./src/css/styles.css"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Animate On Scroll Library => https://michalsnik.github.io/aos/ -->
     <!-- Boostrap Icons-->
@@ -17,6 +17,11 @@
     <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
     <!-- Mi CSS para pisar si es necesario -->
     <link rel="stylesheet" href="./src/css/styles.css">
     <title>Sitio Personal</title>
@@ -28,7 +33,8 @@
         <div class="container">
             <div class="row w-100">
                 <div class="col-11 col-lg-6">
-                    <a class="navbar-brand relaway-espaciado text-wrap" href="./index.html">
+                    <!-- a tenia : navbar-brand -->
+                    <a class= "espaciado text-wrap" href="./index.html">
                         <img src="./src/image/logo-ds.png" alt="Daniela Logo" class="icon-logo">
                         Daniela Santucho </a>
                 </div>
@@ -39,7 +45,8 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-                <nav class="col-lg-6 collapse navbar-collapse justify-content-end align-items-center relaway-body"
+
+                <nav class="col-lg-6 collapse navbar-collapse justify-content-end align-items-center font-nav"
                     id="navbarNav">
                     <ul class="navbar-nav header-nav">
                         <li class="nav-item p-2">
@@ -80,7 +87,7 @@
 
     <main>
         <!-- Starts main -->
-        <section id="my-header" class="container my-lg-5">
+        <section id="my-header" class="container my-3 my-lg-5">
             <div class="row flex-lg-row-reverse">
                 <!-- Header titulo, nombre, imagen, about me y botones -->
                 <div class="col-12 col-lg-5 offset-lg-1 d-lg-flex justify-content-lg-center align-items-lg-center p-3">
@@ -89,7 +96,7 @@
                 <div class="col-12 col-lg-6">
                     <span class="wd-text font-web-dev d-flex mb-4">Web Developer</span>
                     <!-- TODO con JS vaya cambiando los titulos por eso id -->
-                    <h1 class="text-start">Hola, soy <strong>Daniela Santucho</strong></h1>
+                    <h1 class="text-start titles">Hola, soy <strong>Daniela Santucho</strong></h1>
                     <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consequuntur
                         quibusdam
                         repellendus,
@@ -100,10 +107,10 @@
                     <!-- BOTONES-->
                     <!--Boton Porfolio-->
                     <div class="d-flex gap-3 mt-lg-5">
-                        <a href="./pages/porfolio.html" class="btn btn-primary relaway-body button-custom">Porfolio</a>
+                        <a href="./pages/porfolio.html" class="btn btn-primary raleway-body button-custom">Porfolio</a>
                         <!--Boton Linkin-->
                         <a href="https://www.linkedin.com/in/dsantucho/" target="_blank"
-                            class="btn btn-secondary relaway-body button-custom">LinkedIn</a>
+                            class="btn btn-secondary raleway-body button-custom">LinkedIn</a>
                     </div>
                 </div>
                 <!--div textos-->
@@ -111,17 +118,17 @@
             <!--div row-->
         </section>
 
-        <section class="my-services container-fluid my-5 ">
+        <section class="my-services container-fluid py-4 bk-color-secondary">
             <div class="container">
                 <!-- Section Specialized in-->
                 <div class="row d-grid gap-3">
                     <!-- titulos -->
-                    <label class="col-12 relaway-espaciado mt-2"> - SERVICES </label>
-                    <h2 class="col-12">Specialized in</h2>
+                    <label class="col-12 label-subtitle mt-2"> - SERVICES </label>
+                    <h2 class="col-12 subtitle">Specialized in</h2>
                 </div>
                 <div class="row d-flex flex-column flex-lg-row justify-content-evenly align-items-center">
                     <!-- cards -->
-                    <article class="col-12 col-lg-3 card mt-5">
+                    <article class="col-12 col-lg-3 cards-icon card mt-5">
                         <div class="offset-5 col-1 icon-services mt-3">
                             <i class="bi bi-code-square card-img-top d-flex justify-content-center"></i>
                         </div>
@@ -135,7 +142,7 @@
                     </article>
 
                     <!-- cards -->
-                    <article class="col-12 col-lg-3 card mt-5">
+                    <article class="col-12 col-lg-3 cards-icon card mt-5">
                         <div class="offset-5 col-1 icon-services mt-3">
                             <i class="bi bi-robot card-img-top d-flex justify-content-center"></i>
                         </div>
@@ -149,7 +156,7 @@
                     </article>
 
                     <!-- cards -->
-                    <article class="col-12 col-lg-3 card mt-5">
+                    <article class="col-12 col-lg-3 cards-icon card mt-5">
                         <div class="offset-5 col-1 icon-services mt-3">
                             <i class="bi bi-gem card-img-top d-flex justify-content-center"></i>
                         </div>
@@ -165,17 +172,17 @@
             </div> <!-- END Section Specialized in-->
         </section>
 
-        <section id="my-tech" class="container-fluid  p-4">
+        <section id="my-tech" class="bk-color-banner container-fluid  p-4">
             <div class="row d-flex justify-content-around">
                 <!-- Section Tecnologias iconos -->
-                <img class="logo-brands p-2" src="./src/image/tech-icon/figma.png" alt="figma-icon">
-                <img class="logo-brands p-2" src="./src/image/tech-icon/git.png" alt="git-icon">
-                <img class="logo-brands p-2" src="./src/image/tech-icon/github.png" alt="github-icon">
-                <img class="logo-brands p-2" src="./src/image/tech-icon/github.png" alt="github-icon">
-                <img class="logo-brands p-2" src="./src/image/tech-icon/github.png" alt="github-icon">
-                <img class="logo-brands p-2" src="./src/image/tech-icon/html.png" alt="html-icon">
-                <img class="logo-brands p-2" src="./src/image/tech-icon/javascript.png" alt="js-icon">
-                <img class="logo-brands p-2" src="./src/image/tech-icon/sass.png" alt="sass-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/figma.png" alt="figma-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/git.png" alt="git-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/github.png" alt="github-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/github.png" alt="github-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/github.png" alt="github-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/html.png" alt="html-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/javascript.png" alt="js-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/sass.png" alt="sass-icon">
             </div>
         </section><!-- END Section Tecnologias iconos -->
 
@@ -183,18 +190,18 @@
             <!-- Testimonios -->
             <!-- Section titulos -->
             <div class="row d-grid gap-3">
-                <label class="col-12 relaway-espaciado mt-2"> - My Clients</label>
-                <h2 class="col-12">Testimonios</h2>
+                <label class="col-12 label-subtitle mt-2"> - My Clients</label>
+                <h2 class="col-12 subtitle">Testimonios</h2>
             </div>
 
             <div class="row d-flex flex-column flex-lg-row justify-content-evenly align-items-center">
                 <article
-                    class="card col-12 col-lg-3 article-testimonials d-flex flex-column justify-content-between align-items-center">
+                    class="card col-12 col-lg-3 card-testimonials d-flex flex-column justify-content-between align-items-center">
                     <span>
                         <img src="./src/image/testimonials-avatar/avatar-testimonials.png" alt="profile-testimonials">
                     </span>
-                    <div class="pt-4 testimonial-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sint, quas
+                    <div class="pt-4 div-testimonials">
+                        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sint, quas
                             deserunt perspiciatis
                             tates um, facilis porro esse rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Ratione dolorum alias magnam! Voluptate perferendis voluptatum incidunt quos aperiam
@@ -204,53 +211,53 @@
                         </p>
                     </div>
                     <div class="pt-4 d-inline-flex flex-column align-self-start">
-                        <a href="#" class="testimonials-name font-plus-j-light">Name</a>
-                        <label class="text-start job-title font-inter-normal mt-2">Team Leader</label>
+                        <a href="#" class="font-job-title">Name</a>
+                        <label class="text-start job-title font-job-title mt-2">Team Leader</label>
                     </div>
                 </article>
 
                 <article
-                    class="card col-12 col-lg-3 article-testimonials d-flex flex-column justify-content-between align-items-center">
+                    class="card col-12 col-lg-3 card-testimonials d-flex flex-column justify-content-between align-items-center">
                     <span>
                         <img src="./src/image/testimonials-avatar/avatar-testimonials.png" alt="profile-testimonials">
                     </span>
-                    <div class="pt-4 testimonial-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sint, quas
+                    <div class="pt-4 div-testimonials">
+                        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sint, quas
                             deserunt perspiciatis
                         </p>
                     </div>
                     <div class="pt-4 d-inline-flex flex-column align-self-start">
-                        <a href="#" class="testimonials-name font-plus-j-light">Name</a>
-                        <label class="text-start job-title font-inter-normal mt-2">Team Leader</label>
+                        <a href="#" class="font-job-title">Name</a>
+                        <label class="text-start job-title font-job-title mt-2">Team Leader</label>
                     </div>
                 </article>
 
                 <article
-                    class="card col-12 col-lg-3 article-testimonials d-flex flex-column justify-content-between align-items-center">
+                    class="card col-12 col-lg-3 card-testimonials d-flex flex-column justify-content-between align-items-center">
                     <span>
                         <img src="./src/image/testimonials-avatar/avatar-testimonials.png" alt="profile-testimonials">
                     </span>
-                    <div class="pt-4 testimonial-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sint, quas
+                    <div class="pt-4 div-testimonials">
+                        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sint, quas
                             deserunt perspiciatis
                             tates um, facilis porro esse rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
                     </div>
                     <div class="pt-4 d-inline-flex flex-column align-self-start">
-                        <a href="#" class="testimonials-name font-plus-j-light">Name</a>
-                        <label class="text-start job-title font-inter-normal mt-2">Team Leader</label>
+                        <a href="#" class="font-job-title">Name</a>
+                        <label class="text-start job-title font-job-title mt-2">Team Leader</label>
                     </div>
                 </article>
             </div>
         </section><!-- Section Testimonios -->
 
-        <section id="my-skills" class="container-fluid my-5">
+        <section id="my-skills" class="bk-color-secondary container-fluid py-5 ">
             <div class="container">
                 <!-- Section Educacion y Skills -->
                 <!-- <div class="skills-title"> -->
                 <div class="row d-grid gap-3">
-                    <label class="col-12 relaway-espaciado mt-2"> - Learning path</label>
-                    <h2 class="col-12">Education & Skills</h2>
+                    <label class="col-12 label-subtitle mt-2"> - Learning path</label>
+                    <h2 class="col-12 subtitle">Education & Skills</h2>
                 </div>
                 <!-- </div> -->
                 <div class="row d-flex flex-column my-5 flex-lg-row">
@@ -287,38 +294,38 @@
                             assumenda dolorum adipisci suscipit rerum nobis. Cupiditate voluptatum eius esse repellat
                             expedita nemo provident ab, sapiente possimus iste.</p>
                         <h3 class="my-2">React</h3>
-                        <div class="progress bar-container">
-                            <div class=" progress-container progress-bar progress-bar-striped progress-bar-animated"
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated"
                                 role="progressbar" aria-label="Animated striped" aria-valuenow="25" aria-valuemin="0"
                                 aria-valuemax="100" style="width: 15%"></div>
                         </div>
                         <h3 class="my-2">JS</h3>
-                        <div class="progress bar-container">
-                            <div class=" progress-container progress-bar progress-bar-striped progress-bar-animated"
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated"
                                 role="progressbar" aria-label="Animated striped" aria-valuenow="25" aria-valuemin="0"
                                 aria-valuemax="100" style="width: 15%"></div>
                         </div>
                         <h3 class="my-2">HTML5</h3>
-                        <div class="progress bar-container">
-                            <div class=" progress-container progress-bar progress-bar-striped progress-bar-animated"
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated"
                                 role="progressbar" aria-label="Animated striped" aria-valuenow="25" aria-valuemin="0"
                                 aria-valuemax="100" style="width: 50%"></div>
                         </div>
                         <h3 class="my-2">Bootstrap</h3>
-                        <div class="progress bar-container">
-                            <div class=" progress-container progress-bar progress-bar-striped progress-bar-animated"
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated"
                                 role="progressbar" aria-label="Animated striped" aria-valuenow="25" aria-valuemin="0"
                                 aria-valuemax="100" style="width: 25%"></div>
                         </div>
                         <h3 class="my-2">QA- Manual & SDTE</h3>
-                        <div class="progress bar-container">
-                            <div class=" progress-container progress-bar progress-bar-striped progress-bar-animated"
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated"
                                 role="progressbar" aria-label="Animated striped" aria-valuenow="25" aria-valuemin="0"
                                 aria-valuemax="100" style="width: 95%"></div>
                         </div>
                         <h3 class="my-2">Team Lider</h3>
-                        <div class="progress bar-container">
-                            <div class=" progress-container progress-bar progress-bar-striped progress-bar-animated"
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated"
                                 role="progressbar" aria-label="Animated striped" aria-valuenow="25" aria-valuemin="0"
                                 aria-valuemax="100" style="width: 85%"></div>
                         </div>
@@ -327,17 +334,17 @@
             </div>
         </section>
 
-        <section id="my-companies" class="container-fluid  p-4">
+        <section id="my-companies" class="bk-color-banner container-fluid  p-4">
             <div class="row d-flex justify-content-around">
                 <!-- Section Tecnologias iconos -->
-                <img class="logo-brands p-2" src="./src/image/tech-icon/figma.png" alt="figma-icon">
-                <img class="logo-brands p-2" src="./src/image/tech-icon/git.png" alt="git-icon">
-                <img class="logo-brands p-2" src="./src/image/tech-icon/github.png" alt="github-icon">
-                <img class="logo-brands p-2" src="./src/image/tech-icon/github.png" alt="github-icon">
-                <img class="logo-brands p-2" src="./src/image/tech-icon/github.png" alt="github-icon">
-                <img class="logo-brands p-2" src="./src/image/tech-icon/html.png" alt="html-icon">
-                <img class="logo-brands p-2" src="./src/image/tech-icon/javascript.png" alt="js-icon">
-                <img class="logo-brands p-2" src="./src/image/tech-icon/sass.png" alt="sass-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/figma.png" alt="figma-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/git.png" alt="git-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/github.png" alt="github-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/github.png" alt="github-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/github.png" alt="github-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/html.png" alt="html-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/javascript.png" alt="js-icon">
+                <img class="logo-brand p-2" src="./src/image/tech-icon/sass.png" alt="sass-icon">
             </div>
         </section>
     </main> <!-- ends main -->
@@ -346,13 +353,14 @@
     <footer class="my-footer">
         <div class=" container">
             <div class="row d-flex flex-column">
-                <div class="footer-icons d-flex justify-content-center my-4">
+                <div class="d-flex justify-content-center my-4">
                     <a href="./pages/contact.html"><i class="bi bi-envelope px-4"></i></a>
                     <a href="https://github.com/dsantucho" target="_blank"><i class="bi bi-github px-4"></i></a>
-                    <a href="https://www.linkedin.com/in/dsantucho/" target="_blank"><i class="bi bi-linkedin px-4"></i></a>
+                    <a href="https://www.linkedin.com/in/dsantucho/" target="_blank"><i
+                            class="bi bi-linkedin px-4"></i></a>
                 </div>
 
-                <span class=" d-flex justify-content-center footer-copy font-copyrights my-3"> © 2022 - Copyrights
+                <span class=" d-flex justify-content-center copyright my-3"> © 2022 - Copyrights
                     Daniela
                     Santucho</span>
             </div>
