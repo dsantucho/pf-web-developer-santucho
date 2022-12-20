@@ -122,6 +122,19 @@ h1.clipped, h2.clipped, h3.clipped, h4.clipped, h5.clipped, h6.clipped, a.clippe
   position: absolute;
   z-index: -1;
 }
+h1.label-contact, h2.label-contact, h3.label-contact, h4.label-contact, h5.label-contact, h6.label-contact, a.label-contact, label.label-contact {
+  font-size: 1.2rem;
+}
+@media (min-width: 480px) {
+  h1.label-contact, h2.label-contact, h3.label-contact, h4.label-contact, h5.label-contact, h6.label-contact, a.label-contact, label.label-contact {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1201px) {
+  h1.label-contact, h2.label-contact, h3.label-contact, h4.label-contact, h5.label-contact, h6.label-contact, a.label-contact, label.label-contact {
+    font-size: 1.6rem;
+  }
+}
 
 nav.font-nav a {
   font-weight: 500;
