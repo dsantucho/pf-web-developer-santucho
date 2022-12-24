@@ -366,17 +366,137 @@ img.companies-logo.neoris-logo {
   min-height: 25px;
   max-height: 25px;
 }
+@media (min-width: 480px) {
+  img.companies-logo.neoris-logo {
+    min-height: 30px;
+    max-height: 30px;
+  }
+}
+@media (min-width: 576px) {
+  img.companies-logo.neoris-logo {
+    min-height: 35px;
+    max-height: 35px;
+  }
+}
+@media (min-width: 992px) {
+  img.companies-logo.neoris-logo {
+    min-height: 40px;
+    max-height: 40px;
+  }
+}
+@media (min-width: 1201px) {
+  img.companies-logo.neoris-logo {
+    min-height: 45px;
+    max-height: 45px;
+  }
+}
+@media (min-width: 1401px) {
+  img.companies-logo.neoris-logo {
+    min-height: 50px;
+    max-height: 50px;
+  }
+}
 img.companies-logo.liveware-logo {
   min-height: 35px;
   max-height: 35px;
+}
+@media (min-width: 480px) {
+  img.companies-logo.liveware-logo {
+    min-height: 40px;
+    max-height: 40px;
+  }
+}
+@media (min-width: 576px) {
+  img.companies-logo.liveware-logo {
+    min-height: 45px;
+    max-height: 45px;
+  }
+}
+@media (min-width: 992px) {
+  img.companies-logo.liveware-logo {
+    min-height: 50px;
+    max-height: 50px;
+  }
+}
+@media (min-width: 1201px) {
+  img.companies-logo.liveware-logo {
+    min-height: 60px;
+    max-height: 60px;
+  }
+}
+@media (min-width: 1401px) {
+  img.companies-logo.liveware-logo {
+    min-height: 65px;
+    max-height: 65px;
+  }
 }
 img.companies-logo.gire-logo {
   min-height: 45px;
   max-height: 45px;
 }
+@media (min-width: 480px) {
+  img.companies-logo.gire-logo {
+    min-height: 50px;
+    max-height: 50px;
+  }
+}
+@media (min-width: 576px) {
+  img.companies-logo.gire-logo {
+    min-height: 55px;
+    max-height: 55px;
+  }
+}
+@media (min-width: 992px) {
+  img.companies-logo.gire-logo {
+    min-height: 60px;
+    max-height: 60px;
+  }
+}
+@media (min-width: 1201px) {
+  img.companies-logo.gire-logo {
+    min-height: 65px;
+    max-height: 65px;
+  }
+}
+@media (min-width: 1401px) {
+  img.companies-logo.gire-logo {
+    min-height: 75px;
+    max-height: 75px;
+  }
+}
 img.companies-logo.fz-logo {
   min-height: 30px;
   max-height: 30px;
+}
+@media (min-width: 480px) {
+  img.companies-logo.fz-logo {
+    min-height: 35px;
+    max-height: 35px;
+  }
+}
+@media (min-width: 576px) {
+  img.companies-logo.fz-logo {
+    min-height: 40px;
+    max-height: 40px;
+  }
+}
+@media (min-width: 992px) {
+  img.companies-logo.fz-logo {
+    min-height: 45px;
+    max-height: 45px;
+  }
+}
+@media (min-width: 1201px) {
+  img.companies-logo.fz-logo {
+    min-height: 50px;
+    max-height: 50px;
+  }
+}
+@media (min-width: 1401px) {
+  img.companies-logo.fz-logo {
+    min-height: 55px;
+    max-height: 55px;
+  }
 }
 
 li.icons-style {

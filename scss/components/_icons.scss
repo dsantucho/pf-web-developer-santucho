@@ -23,19 +23,100 @@ img{
         &.neoris-logo{
             min-height: 25px;
             max-height: 25px;  
+            @include mobile-lg(){
+                min-height: 30px;
+                max-height: 30px; 
+            } //480
+            @include tablet-sm(){ 
+                min-height: 35px;
+                max-height: 35px; 
+            } //576
+            @include tablet-lg(){
+                min-height: 40px;
+                max-height: 40px; 
+            } //992
+            @include web-sm(){
+                min-height: 45px;
+                max-height: 45px;  
+            } //1201
+            @include web-lg(){
+                min-height: 50px;
+                max-height: 50px;
+            } //1401
+
         }
         &.liveware-logo{
             min-height: 35px;
             max-height: 35px;
+            @include mobile-lg(){
+                min-height: 40px;
+                max-height: 40px; 
+            } //480
+            @include tablet-sm(){ 
+                min-height: 45px;
+                max-height: 45px; 
+            } //576
+            @include tablet-lg(){
+                min-height: 50px;
+                max-height: 50px; 
+            } //992
+            @include web-sm(){
+                min-height: 60px;
+                max-height: 60px;  
+            } //1201
+            @include web-lg(){
+                min-height: 65px;
+                max-height: 65px;
+            } //1401
         }
 
         &.gire-logo{
             min-height: 45px;
             max-height: 45px;
+            @include mobile-lg(){
+                min-height: 50px;
+                max-height: 50px; 
+            } //480
+            @include tablet-sm(){ 
+                min-height: 55px;
+                max-height: 55px; 
+            } //576
+            @include tablet-lg(){
+                min-height: 60px;
+                max-height: 60px; 
+            } //992
+            @include web-sm(){
+                min-height: 65px;
+                max-height: 65px;  
+            } //1201
+            @include web-lg(){
+                min-height: 75px;
+                max-height: 75px;
+            } //1401
         }
         &.fz-logo{
             min-height: 30px;
             max-height: 30px;
+            @include mobile-lg(){
+                min-height: 35px;
+                max-height: 35px; 
+            } //480
+            @include tablet-sm(){ 
+                min-height: 40px;
+                max-height: 40px; 
+            } //576
+            @include tablet-lg(){
+                min-height: 45px;
+                max-height: 45px; 
+            } //992
+            @include web-sm(){
+                min-height: 50px;
+                max-height: 50px;  
+            } //1201
+            @include web-lg(){
+                min-height: 55px;
+                max-height: 55px;
+            } //1401
         }
 
 
