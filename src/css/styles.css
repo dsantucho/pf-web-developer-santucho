@@ -109,6 +109,11 @@ h1.font-job-title, h2.font-job-title, h3.font-job-title, h4.font-job-title, h5.f
     font-size: 1.2rem;
   }
 }
+@media (min-width: 576px) {
+  h1.font-job-title, h2.font-job-title, h3.font-job-title, h4.font-job-title, h5.font-job-title, h6.font-job-title, a.font-job-title, label.font-job-title {
+    font-size: 1.5rem;
+  }
+}
 h1.clipped, h2.clipped, h3.clipped, h4.clipped, h5.clipped, h6.clipped, a.clipped, label.clipped {
   /* Para esconder mis h1 lo googlee */
   clip: rect(0 0 0 0);
@@ -132,6 +137,32 @@ h1.label-contact, h2.label-contact, h3.label-contact, h4.label-contact, h5.label
 }
 @media (min-width: 1201px) {
   h1.label-contact, h2.label-contact, h3.label-contact, h4.label-contact, h5.label-contact, h6.label-contact, a.label-contact, label.label-contact {
+    font-size: 1.6rem;
+  }
+}
+h1.university, h2.university, h3.university, h4.university, h5.university, h6.university, a.university, label.university {
+  font-size: 1.5rem;
+}
+@media (min-width: 480px) {
+  h1.university, h2.university, h3.university, h4.university, h5.university, h6.university, a.university, label.university {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1201px) {
+  h1.university, h2.university, h3.university, h4.university, h5.university, h6.university, a.university, label.university {
+    font-size: 2rem;
+  }
+}
+h1.university.u-title, h2.university.u-title, h3.university.u-title, h4.university.u-title, h5.university.u-title, h6.university.u-title, a.university.u-title, label.university.u-title {
+  font-size: 1.2rem;
+}
+@media (min-width: 480px) {
+  h1.university.u-title, h2.university.u-title, h3.university.u-title, h4.university.u-title, h5.university.u-title, h6.university.u-title, a.university.u-title, label.university.u-title {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1201px) {
+  h1.university.u-title, h2.university.u-title, h3.university.u-title, h4.university.u-title, h5.university.u-title, h6.university.u-title, a.university.u-title, label.university.u-title {
     font-size: 1.6rem;
   }
 }
@@ -326,6 +357,27 @@ img.icon-logo {
   max-height: 6rem;
   max-width: 6rem;
 }
+img.companies-logo {
+  filter: grayscale(1) brightness(0);
+  width: auto;
+  height: auto;
+}
+img.companies-logo.neoris-logo {
+  min-height: 25px;
+  max-height: 25px;
+}
+img.companies-logo.liveware-logo {
+  min-height: 35px;
+  max-height: 35px;
+}
+img.companies-logo.gire-logo {
+  min-height: 45px;
+  max-height: 45px;
+}
+img.companies-logo.fz-logo {
+  min-height: 30px;
+  max-height: 30px;
+}
 
 li.icons-style {
   font-size: 2rem;
@@ -356,15 +408,28 @@ section article.cards-icon {
     max-width: 550px;
   }
 }
+@media (min-width: 992px) {
+  section article.cards-icon {
+    min-height: 310px;
+    max-width: 550px;
+  }
+}
+@media (min-width: 1201px) {
+  section article.cards-icon {
+    min-height: 310px;
+    max-width: 650px;
+  }
+}
 @media (min-width: 1401px) {
   section article.cards-icon {
+    min-height: 310px;
     max-width: 650px;
   }
 }
 section article.card-testimonials {
   max-width: calc(100vw - 24px);
-  max-height: 310px;
-  min-height: 310px;
+  max-height: 410px;
+  min-height: 410px;
   background: #FFFFFF;
   border-radius: 8px;
   padding: 50px 25px 15px 25px;
@@ -377,7 +442,7 @@ section article.card-testimonials {
 }
 @media (min-width: 1401px) {
   section article.card-testimonials {
-    max-width: 550px;
+    max-width: 550px !important;
   }
 }
 section article.card-testimonials span {
@@ -390,6 +455,13 @@ section article.card-testimonials span {
 section article.card-testimonials div a {
   text-decoration: none;
   color: #232E35;
+}
+section article.card-testimonials div a i {
+  transition: all 0.25s ease;
+}
+section article.card-testimonials div a i:hover {
+  color: #0a66c2;
+  cursor: pointer;
 }
 section article.card-testimonials div label.job-title {
   padding: 4px 8px;

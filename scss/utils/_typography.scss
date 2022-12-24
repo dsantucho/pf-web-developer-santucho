@@ -4,6 +4,7 @@
 h1, h2, h3, h4, h5, h6, a, label{
         font-family: 'Raleway';
         font-style : normal;
+
     &.titles{
         font-size: $font-size-title-mb;
         font-weight: 700;
@@ -62,6 +63,9 @@ h1, h2, h3, h4, h5, h6, a, label{
         @include mobile-lg(){ //480px
             font-size: $font-size-sm;
         }
+        @include tablet-sm(){
+            font-size: $font-size-lg;
+        }
     }
     &.clipped {
         /* Para esconder mis h1 lo googlee */
@@ -83,6 +87,24 @@ h1, h2, h3, h4, h5, h6, a, label{
         }
         @include web-sm(){
             font-size: $font-size-xxl;
+        }
+    }
+    &.university{
+        font-size: $font-size-lg;
+        @include mobile-lg(){ //480px
+            font-size: $font-size-xxl;
+        }
+        @include web-sm(){
+            font-size: $font-size-xxxl;
+        }
+        &.u-title{
+            font-size:$font-size-sm ;
+            @include mobile-lg(){ //480px
+                font-size: $font-size-lg;
+            }
+            @include web-sm(){
+                font-size: $font-size-xxl;
+            }
         }
     }
 }
