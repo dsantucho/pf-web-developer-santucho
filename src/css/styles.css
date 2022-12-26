@@ -591,9 +591,40 @@ section article.card-testimonials div label.job-title {
   width: fit-content;
 }
 section div { /* es en profolio */ }
+section div article div.card-custom-size {
+  overflow: auto;
+}
+@media (min-width: 480px) {
+  section div article div.card-custom-size {
+    max-width: 400px;
+  }
+}
+@media (min-width: 576px) {
+  section div article div.card-custom-size {
+    max-width: 450px;
+  }
+}
+@media (min-width: 992px) {
+  section div article div.card-custom-size {
+    min-height: 400px;
+    max-width: 450px;
+  }
+}
+@media (min-width: 1201px) {
+  section div article div.card-custom-size {
+    min-height: 400px;
+    max-width: 450px;
+  }
+}
+@media (min-width: 1401px) {
+  section div article div.card-custom-size {
+    min-height: 450px;
+    max-width: 450px;
+  }
+}
 section div article div.card-img-custom {
   width: 100%;
-  height: 200px;
+  height: 250px;
   background-size: cover;
 }
 section div.contact-card {
@@ -700,10 +731,10 @@ body main section div article h3 {
   color: #25282B;
 }
 body main section div article div.card div.card-img-custom.ejemplo-1 {
-  background-image: url("../image/porfolio/porfolio-ejemplo-1.png");
+  background-image: url("../image/porfolio/robofriends-78kb.jpg");
 }
 body main section div article div.card div.card-img-custom.ejemplo-2 {
-  background-image: url("../image/porfolio/porfolio-ejemplo-2.png");
+  background-image: url("../image/porfolio/thumbnail-personal-site-85kb.jpg");
 }
 body main section div article div.card div.card-img-custom.ejemplo-3 {
   background-image: url("../image/porfolio/porfolio-ejemplo-3.png");

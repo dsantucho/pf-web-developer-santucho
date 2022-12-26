@@ -80,10 +80,35 @@ section{
     }
     div{ /* es en profolio */
         article{
+
             div{
+                &.card-custom-size{
+                    overflow: auto;
+                    // max-width: 450px;
+                    // max-height: 400px;
+
+                    @include mobile-lg(){
+                        max-width: 400px; 
+                    }
+                    @include tablet-sm(){
+                        max-width: 450px; 
+                    }
+                    @include tablet-lg(){
+                        min-height: 400px;
+                        max-width: 450px; 
+                    }
+                    @include web-sm(){
+                        min-height: 400px;
+                        max-width: 450px; 
+                    }
+                    @include web-lg(){
+                        min-height: 450px;
+                        max-width: 450px; 
+                    }
+                }
                 &.card-img-custom{
                     width: 100%;
-                    height: 200px;
+                    height: 250px;
                     background-size: cover;
                 }
             }
