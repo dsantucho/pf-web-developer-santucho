@@ -573,7 +573,6 @@ section article.cards-icon {
 section article.card-testimonials {
   max-width: calc(100vw - 24px);
   max-height: 410px;
-  min-height: 410px;
   background: #FFFFFF;
   border-radius: 8px;
   padding: 50px 25px 15px 25px;
@@ -584,9 +583,15 @@ section article.card-testimonials {
     max-width: 450px;
   }
 }
+@media (min-width: 992px) {
+  section article.card-testimonials {
+    min-height: 410px;
+  }
+}
 @media (min-width: 1401px) {
   section article.card-testimonials {
     max-width: 550px !important;
+    min-height: 410px;
   }
 }
 section article.card-testimonials span {
