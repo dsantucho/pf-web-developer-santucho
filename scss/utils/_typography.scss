@@ -123,6 +123,7 @@ span, p, textarea{
     font-family: 'Plus Jakarta Sans'; //'Inter';
     font-style : normal;
     font-size: $font-size-sm;
+    letter-spacing: 1px;
     @include mobile-lg(){ //480px
         font-size: $font-size-lg;
     }
