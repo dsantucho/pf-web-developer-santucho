@@ -552,19 +552,22 @@ section article.cards-icon {
 @media (min-width: 992px) {
   section article.cards-icon {
     min-height: 310px;
+    max-height: 310px;
     max-width: 550px;
   }
 }
 @media (min-width: 1201px) {
   section article.cards-icon {
     min-height: 310px;
+    max-height: 310px;
     max-width: 650px;
   }
 }
 @media (min-width: 1401px) {
   section article.cards-icon {
     min-height: 310px;
-    max-width: 650px;
+    max-height: 310px;
+    max-width: 750px;
   }
 }
 section article.card-testimonials {

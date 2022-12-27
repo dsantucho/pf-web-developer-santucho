@@ -13,15 +13,18 @@ section{
             }
             @include tablet-lg(){
                 min-height: 310px;
+                max-height: 310px;
                 max-width: 550px; 
             }
             @include web-sm(){
                 min-height: 310px;
+                max-height: 310px;
                 max-width: 650px; 
             }
             @include web-lg(){
                 min-height: 310px;
-                max-width: 650px; 
+                max-height: 310px;
+                max-width: 750px; 
             }
         }
         &.card-testimonials{
