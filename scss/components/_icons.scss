@@ -143,6 +143,18 @@ article{
                 padding: 0px;
             }
         }
+        a{
+            i{
+                &.icons-style{
+                    color: $color-github;
+                    font-size: $icon-porfolio-git-mb;
+                    @include web-sm (){
+                        font-size:$icon-porfolio-git-web;
+
+                    }
+                }
+            }
+        }
     }
 }
 

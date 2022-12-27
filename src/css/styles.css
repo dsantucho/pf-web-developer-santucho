@@ -318,11 +318,22 @@ label.technology {
   border: 1px solid #9A9FA8;
   border-radius: 4px;
   transition: all 0.25s ease;
+  font-size: 1.1rem;
 }
 label.technology:hover {
   background-color: #3A7091;
   color: #FFFFFF;
   cursor: pointer;
+}
+@media (min-width: 576px) {
+  label.technology {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1201px) {
+  label.technology {
+    font-size: 1.5rem;
+  }
 }
 
 input.formulario-btn {
@@ -515,6 +526,15 @@ article div.icon-services i {
   font-size: 2rem;
   color: #FF9494;
   padding: 0px;
+}
+article div a i.icons-style {
+  color: #000000;
+  font-size: 1.1rem;
+}
+@media (min-width: 1201px) {
+  article div a i.icons-style {
+    font-size: 1.6rem;
+  }
 }
 
 section article.cards-icon {
