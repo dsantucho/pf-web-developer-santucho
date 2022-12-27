@@ -826,10 +826,11 @@ body main section div h2 {
 body main section div form div label {
   color: #232E35;
 }
-body main section div form div input, body main section div form div textarea {
+body main section div form div input, body main section div form div textarea, body main section div form div select {
   color: #656D72;
+  font-size: 1.5rem;
 }
-body main section div form div input.formulario-btn, body main section div form div textarea.formulario-btn {
+body main section div form div input.formulario-btn, body main section div form div textarea.formulario-btn, body main section div form div select.formulario-btn {
   color: #FFFFFF;
 }
 body main section div div label {

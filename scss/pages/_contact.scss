@@ -9,9 +9,11 @@ body{
                     div{
                         label{
                             color:$color-font-text;
+                            
                         }
-                        input, textarea{
+                        input, textarea, select{
                             color:$color-font-secondary;
+                            font-size: $font-size-lg;
                             &.formulario-btn{
                                 color: $color-white
                             }
