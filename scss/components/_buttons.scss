@@ -3,11 +3,11 @@ li{
         &:hover{
             a{
                 &.gh{
-                    color: $color-github;
+                    color: $color-github !important;
                     cursor: pointer; 
                 }
                 &.lk{
-                    color: $color-linkedin;
+                    color: $color-linkedin !important;
                     cursor: pointer;
                 }
             }

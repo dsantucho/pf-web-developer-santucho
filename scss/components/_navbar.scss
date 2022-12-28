@@ -16,6 +16,10 @@ header {
                 display: none !important;
             }
         }
+        a{
+            text-decoration: none;
+            color: $color-font-primary!important;
+        }
     }
 
     nav {
@@ -31,12 +35,13 @@ header {
 
                 a {
                     text-decoration: none;
-                    color          : $color-font-secondary;
+                    color          : $color-font-secondary !important;
+                    &.active {
+                        color:$color-font-primary !important;
+                    }
                 }
 
-                &.nav-link.active {
-                    color: $color-font-primary;
-                }
+
             }
         }
     }

@@ -264,6 +264,10 @@ header:hover {
     display: none !important;
   }
 }
+header div a {
+  text-decoration: none;
+  color: #25282B !important;
+}
 @media (min-width: 992px) {
   header nav {
     flex-grow: 0 !important;
@@ -277,18 +281,18 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #656D72;
+  color: #656D72 !important;
 }
-header nav ul li.nav-link.active {
-  color: #25282B;
+header nav ul li a.active {
+  color: #25282B !important;
 }
 
 li.icons-style:hover a.gh {
-  color: #000000;
+  color: #000000 !important;
   cursor: pointer;
 }
 li.icons-style:hover a.lk {
-  color: #0a66c2;
+  color: #0a66c2 !important;
   cursor: pointer;
 }
 
@@ -773,6 +777,10 @@ body main section article div.progress {
 }
 body main section article div div.progress-bar {
   background-color: #3A7091;
+}
+body main section article div.education {
+  border-left: 1px solid rgba(154, 159, 168, 0.4745098039);
+  padding-left: 10px;
 }
 body main section article h3, body main section article h4 {
   color: #25282B;

@@ -44,6 +44,10 @@ body{
                             background-color: $color-blue;
                         }
                     }
+                    &.education{
+                        border-left: 1px solid $color-education-border;
+                        padding-left: 10px;
+                    }
                 }
                 h3, h4{
                     color:$color-font-primary;
