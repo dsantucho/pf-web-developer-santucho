@@ -5,6 +5,13 @@
     }
 }
 
+// @for $i from 1 through 6 {
+//     .fz-body-#{$i}{
+//         font-size: 1.#{$i}rem;
+        
+//     }
+// }
+
 @mixin mobile-lg() {
     @media (min-width:480px){
         @content;

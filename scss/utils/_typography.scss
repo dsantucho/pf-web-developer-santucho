@@ -122,13 +122,16 @@ nav{
 span, p, textarea{
     font-family: 'Plus Jakarta Sans'; //'Inter';
     font-style : normal;
-    font-size: $font-size-sm;
+    font-size: $font-size-body-mb;
     letter-spacing: 1px;
     @include mobile-lg(){ //480px
-        font-size: $font-size-lg;
+        font-size: $font-size-body-lg;
     }
     @include web-sm(){
-        font-size: $font-size-xxl;
+        font-size: $font-size-body-lg;
+    }
+    @include web-lg(){
+        font-size:$font-size-body-xl ;
     }
     &.text-center{
         text-align : center;

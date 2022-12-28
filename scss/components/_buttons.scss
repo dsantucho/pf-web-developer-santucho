@@ -48,13 +48,13 @@ label{
         padding      : 4px 8px;
         border       : 1px solid $color-header-border; 
         border-radius: 4px;
-        transition: all 0.25s ease; 
+        // transition: all 0.25s ease; 
         font-size: $font-size-mb;
-        &:hover{
-            background-color:$color-blue;
-            color: $color-white;
-            cursor:pointer;
-        }
+        // &:hover{
+        //     background-color:$color-blue;
+        //     color: $color-white;
+        //     cursor:pointer;
+        // }
         @include tablet-sm(){
             font-size: $font-size-sm;
         }
