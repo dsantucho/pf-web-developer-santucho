@@ -59,13 +59,13 @@ h1, h2, h3, h4, h5, h6, a, label{
     &.font-job-title{
         font-family: 'Inter';
         font-style : normal;
-        font-size  : $font-size-mb;
-        @include mobile-lg(){ //480px
-            font-size: $font-size-sm;
-        }
-        @include tablet-sm(){
-            font-size: $font-size-lg;
-        }
+        // font-size  : $font-size-mb;
+        // @include mobile-lg(){ //480px
+        //     font-size: $font-size-sm;
+        // }
+        // @include tablet-sm(){
+        //     font-size: $font-size-lg;
+        // }
     }
     &.clipped {
         /* Para esconder mis h1 lo googlee */
